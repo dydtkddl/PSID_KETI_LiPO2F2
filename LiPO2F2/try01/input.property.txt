@@ -1,0 +1,2983 @@
+*************************************************
+******************* ORCA 6.0.1 ******************
+*************************************************
+$Calculation_Status
+   &GeometryIndex 35
+   &ListStatus       OUT
+   &VERSION [&Type "String"] "6.0.1"
+   &PROGNAME [&Type "String"] "LeanSCF"
+   &STATUS [&Type "String"] "NORMAL TERMINATION"
+$End
+$Geometry
+   &GeometryIndex 1
+   &ListStatus       OUT
+   &NATOMS [&Type "Integer"] 6
+   &NCORELESSECP [&Type "Integer"] 0
+   &NGHOSTATOMS [&Type "Integer"] 0
+   &CartesianCoordinates [&Type "Coordinates", &Dim(6,4), &Units "Bohr"] 
+              Li    -6.444559211565    4.434595593485   -3.956092096871
+              F     -3.637491444281   11.188888776448   -1.159158813114
+              O     -1.712755059712    7.841632601545   -0.272848288315
+              P     -4.949916385694    8.366059315408   -0.238217562327
+              F     -5.787909241669   11.129165070090    1.245519220711
+              O     -4.605732754496    7.760616620457    2.966454837772
+$End
+$SCF_Energy
+   &GeometryIndex 1
+   &ListStatus       OUT
+   &SCF_ENERGY [&Type "Double"]      -6.9883900814311573e+02
+$End
+$DFT_Energy
+   &GeometryIndex 1
+   &ListStatus       OUT
+   &NALPHAEL [&Type "Integer"] 26
+   &NBETAEL [&Type "Integer"] 26
+   &NTOTALEL [&Type "Integer"] 52
+   &EEXCHANGE [&Type "Double"]      -4.8548759679569727e+01
+   &ECORR [&Type "Double"]      -2.3192212730095698e+00
+   &ECNL [&Type "Double"]       0.0000000000000000e+00
+   &EXC [&Type "Double"]      -5.0867980952579295e+01
+   &EEMBED [&Type "Double"]       0.0000000000000000e+00
+   &FINALEN [&Type "Double"]      -6.9883900814311573e+02  "No Van der Waals correction"
+$End
+$Solvation_Details
+   &GeometryIndex 1
+   &ListStatus       OUT
+   &SOLVENT [&Type "String"] "WATER"
+   &EPSILON [&Type "Double"]       8.0150999999999996e+01
+   &REFRAC [&Type "Double"]       1.3328000000000000e+00
+   &RSOLV [&Type "Double"]       1.3000000000000000e+00
+   &SURFACETYPE [&Type "String"] "GAUSSIAN VDW"
+   &NPOINTS [&Type "Integer"] 866
+   &SURFACEAREA [&Type "Double"]       5.1120956981699999e+02
+   &CPCMDIELENERGY [&Type "Double"]      -8.3897953999999997e-02
+$End
+$Mulliken_Population_Analysis
+   &GeometryIndex 1
+   &ListStatus       OUT
+   &NATOMS [&Type "Integer"] 6
+   &ATNO [&Type "ArrayOfIntegers", &Dim (6,1)] 
+                                                         0
+
+0                                                        3
+1                                                        9
+2                                                        8
+3                                                       15
+4                                                        9
+5                                                        8
+   &ATOMICCHARGES [&Type "ArrayOfDoubles", &Dim (6,1)] 
+                                                         0
+
+0                                      9.0615674398868551e-01
+1                                     -2.8605744568578295e-01
+2                                     -4.5241075191947822e-01
+3                                      5.7275143939911288e-01
+4                                     -2.8080078982676149e-01
+5                                     -4.5963919595573977e-01
+$End
+$Loewdin_Population_Analysis
+   &GeometryIndex 1
+   &ListStatus       OUT
+   &NATOMS [&Type "Integer"] 6
+   &ATNO [&Type "ArrayOfIntegers", &Dim (6,1)] 
+                                                         0
+
+0                                                        3
+1                                                        9
+2                                                        8
+3                                                       15
+4                                                        9
+5                                                        8
+   &ATOMICCHARGES [&Type "ArrayOfDoubles", &Dim (6,1)] 
+                                                         0
+
+0                                      7.7507881571416215e-01
+1                                     -1.4095760714522321e-01
+2                                     -2.9506826731529756e-01
+3                                      1.0040151438776412e-01
+4                                     -1.4018151866072337e-01
+5                                     -2.9927293698068169e-01
+$End
+$Mayer_Population_Analysis
+   &GeometryIndex 1
+   &ListStatus       OUT
+   &NATOMS [&Type "Integer"] 6 "Total number of atoms"
+   &BONDTHRESH [&Type "Double"]       1.0000000000000001e-01  "The threshold for printing"
+   &NBONDORDERSPRINT [&Type "Integer"] 10 "The number of bond orders larger than threshold"
+   &BONDORDERS [&Type "ArrayOfDoubles", &Dim (10,1)] "The bond orders"
+                                                         0
+
+0                                      1.3266668578724441e-01
+1                                      1.0423665703416794e-01
+2                                      7.1115938815798718e-01
+3                                      1.7028730864470079e-01
+4                                      1.0562408510533243e+00
+5                                      1.7098444439888813e-01
+6                                      4.8241248212034754e-01
+7                                      7.0264969206077310e-01
+8                                      1.0722266638652700e+00
+9                                      1.0359690073421104e-01
+   &COMPONENTS [&Type "ArrayOfIntegers", &Dim (10,4)] "The indices and atomic numbers of the bonding atoms"
+                                                         0                           1                           2                           3
+
+0                                                        0                           3                           3                          15
+1                                                        1                           9                           2                           8
+2                                                        1                           9                           3                          15
+3                                                        1                           9                           5                           8
+4                                                        2                           8                           3                          15
+5                                                        2                           8                           4                           9
+6                                                        2                           8                           5                           8
+7                                                        3                          15                           4                           9
+8                                                        3                          15                           5                           8
+9                                                        4                           9                           5                           8
+   &ATNO [&Type "ArrayOfIntegers", &Dim (6,1)] "Atomic number of the elements"
+                                                         0
+
+0                                                        3
+1                                                        9
+2                                                        8
+3                                                       15
+4                                                        9
+5                                                        8
+   &NA [&Type "ArrayOfDoubles", &Dim (6,1)] "Mulliken gross atomic population"
+                                                         0
+
+0                                      2.0938432560113145e+00
+1                                      9.2860574456857865e+00
+2                                      8.4524107519194818e+00
+3                                      1.4427248560600898e+01
+4                                      9.2808007898267597e+00
+5                                      8.4596391959557380e+00
+   &ZA [&Type "ArrayOfDoubles", &Dim (6,1)] "Total nuclear charge"
+                                                         0
+
+0                                      3.0000000000000000e+00
+1                                      9.0000000000000000e+00
+2                                      8.0000000000000000e+00
+3                                      1.5000000000000000e+01
+4                                      9.0000000000000000e+00
+5                                      8.0000000000000000e+00
+   &QA [&Type "ArrayOfDoubles", &Dim (6,1)] "Mulliken gross atomic charge"
+                                                         0
+
+0                                      9.0615674398868551e-01
+1                                     -2.8605744568578650e-01
+2                                     -4.5241075191948177e-01
+3                                      5.7275143939910222e-01
+4                                     -2.8080078982675971e-01
+5                                     -4.5963919595573799e-01
+   &VA [&Type "ArrayOfDoubles", &Dim (6,1)] "Mayer's total valence"
+                                                         0
+
+0                                      1.7903387630023995e-01
+1                                      9.0780846128528381e-01
+2                                      1.8328061439742942e+00
+3                                      3.6749432809245870e+00
+4                                      9.0019581981540764e-01
+5                                      1.8418668921805372e+00
+   &BVA [&Type "ArrayOfDoubles", &Dim (6,1)] "Mayer's bonded valence"
+                                                         0
+
+0                                      1.7903387630024484e-01
+1                                      9.0780846128525283e-01
+2                                      1.8328061439742864e+00
+3                                      3.6749432809246017e+00
+4                                      9.0019581981538366e-01
+5                                      1.8418668921805263e+00
+   &FA [&Type "ArrayOfDoubles", &Dim (6,1)] "Mayer's free valence"
+                                                         0
+
+0                                      0.0000000000000000e+00
+1                                      0.0000000000000000e+00
+2                                      0.0000000000000000e+00
+3                                      0.0000000000000000e+00
+4                                      0.0000000000000000e+00
+5                                      0.0000000000000000e+00
+$End
+$VdW_Correction
+   &GeometryIndex 1
+   &ListStatus       OUT
+   &VDW [&Type "Double"]      -8.8317489541869746e-03
+$End
+$SCF_Nuc_Gradient
+   &GeometryIndex 1
+   &ListStatus       OUT
+   &NATOMS [&Type "Integer"] 6
+   &ROOT [&Type "Integer"] 0
+   &GRADNORM [&Type "Double"]       2.7059773817252730e-01
+   &GRAD [&Type "ArrayOfDoubles", &Dim (18,1)] 
+                                                         0
+
+0                                      8.2173728536987043e-04
+1                                     -1.7636443245477610e-03
+2                                     -9.5742046175277063e-04
+3                                     -8.1658421971469677e-02
+4                                     -1.3248103308487788e-02
+5                                      1.3401951455966249e-01
+6                                      5.3499175694621787e-02
+7                                      2.7447139906617742e-02
+8                                     -1.4189608946473115e-02
+9                                     -8.9761043171896204e-02
+10                                    -3.1504099235728888e-02
+11                                    -8.1451839556443362e-02
+12                                     1.2517990492930145e-01
+13                                    -6.6893309862140343e-03
+14                                    -9.5421119518807454e-02
+15                                    -8.0813526986449110e-03
+16                                     2.5758037926573229e-02
+17                                     5.8000473953959963e-02
+$End
+$Geometry
+   &GeometryIndex 2
+   &ListStatus       OUT
+   &NATOMS [&Type "Integer"] 6
+   &NCORELESSECP [&Type "Integer"] 0
+   &NGHOSTATOMS [&Type "Integer"] 0
+   &CartesianCoordinates [&Type "Coordinates", &Dim(6,4), &Units "Bohr"] 
+              Li    -6.419555120967    4.478502664063   -3.925237662002
+              F     -3.610270293758   11.216966661001   -1.282347999499
+              O     -1.767920923124    7.758084766174   -0.188469495354
+              P     -4.926460216465    8.411987451164   -0.215055366715
+              F     -5.894715367186   11.153553243724    1.294734348349
+              O     -4.519442175918    7.701863191309    2.902033473077
+$End
+$SCF_Energy
+   &GeometryIndex 2
+   &ListStatus       OUT
+   &SCF_ENERGY [&Type "Double"]      -6.9888890435164478e+02
+$End
+$DFT_Energy
+   &GeometryIndex 2
+   &ListStatus       OUT
+   &NALPHAEL [&Type "Integer"] 26
+   &NBETAEL [&Type "Integer"] 26
+   &NTOTALEL [&Type "Integer"] 52
+   &EEXCHANGE [&Type "Double"]      -4.8552871196032783e+01
+   &ECORR [&Type "Double"]      -2.3184621912288845e+00
+   &ECNL [&Type "Double"]       0.0000000000000000e+00
+   &EXC [&Type "Double"]      -5.0871333387261664e+01
+   &EEMBED [&Type "Double"]       0.0000000000000000e+00
+   &FINALEN [&Type "Double"]      -6.9888890435164478e+02  "No Van der Waals correction"
+$End
+$Solvation_Details
+   &GeometryIndex 2
+   &ListStatus       OUT
+   &SOLVENT [&Type "String"] "WATER"
+   &EPSILON [&Type "Double"]       8.0150999999999996e+01
+   &REFRAC [&Type "Double"]       1.3328000000000000e+00
+   &RSOLV [&Type "Double"]       1.3000000000000000e+00
+   &SURFACETYPE [&Type "String"] "GAUSSIAN VDW"
+   &NPOINTS [&Type "Integer"] 865
+   &SURFACEAREA [&Type "Double"]       5.1290351419700005e+02
+   &CPCMDIELENERGY [&Type "Double"]      -8.1049209999999997e-02
+$End
+$VdW_Correction
+   &GeometryIndex 2
+   &ListStatus       OUT
+   &VDW [&Type "Double"]      -8.8305146666141018e-03
+$End
+$SCF_Nuc_Gradient
+   &GeometryIndex 2
+   &ListStatus       OUT
+   &NATOMS [&Type "Integer"] 6
+   &ROOT [&Type "Integer"] 0
+   &GRADNORM [&Type "Double"]       2.0330193316333386e-01
+   &GRAD [&Type "ArrayOfDoubles", &Dim (18,1)] 
+                                                         0
+
+0                                      8.6148176056772847e-04
+1                                     -2.2809425179873264e-03
+2                                     -1.5291765992606261e-03
+3                                     -4.9359276315432257e-02
+4                                      1.5008536194449917e-03
+5                                      9.4815782501035145e-02
+6                                      4.7934859430314947e-02
+7                                      2.4917632982495705e-02
+8                                     -2.9039059966384451e-02
+9                                     -6.5680372558580613e-02
+10                                    -5.3677655612586528e-02
+11                                    -5.8525327406626526e-02
+12                                     8.9598952133336074e-02
+13                                     5.2957945637317205e-03
+14                                    -5.9016183357652116e-02
+15                                    -2.3355644388083893e-02
+16                                     2.4244316954284712e-02
+17                                     5.3293964853194487e-02
+$End
+$Geometry
+   &GeometryIndex 3
+   &ListStatus       OUT
+   &NATOMS [&Type "Integer"] 6
+   &NCORELESSECP [&Type "Integer"] 0
+   &NGHOSTATOMS [&Type "Integer"] 0
+   &CartesianCoordinates [&Type "Coordinates", &Dim(6,4), &Units "Bohr"] 
+              Li    -6.395101191033    4.533266708005   -3.899126776630
+              F     -3.610060920086   11.239966127955   -1.393367018752
+              O     -1.861494431337    7.660732295853   -0.037579436572
+              P     -4.911033563922    8.468055640292   -0.195557027760
+              F     -5.992638728777   11.180136623479    1.313659056194
+              O     -4.368035262262    7.638800581851    2.797628501375
+$End
+$SCF_Energy
+   &GeometryIndex 3
+   &ListStatus       OUT
+   &SCF_ENERGY [&Type "Double"]      -6.9893541996227862e+02
+$End
+$DFT_Energy
+   &GeometryIndex 3
+   &ListStatus       OUT
+   &NALPHAEL [&Type "Integer"] 26
+   &NBETAEL [&Type "Integer"] 26
+   &NTOTALEL [&Type "Integer"] 52
+   &EEXCHANGE [&Type "Double"]      -4.8576971355644744e+01
+   &ECORR [&Type "Double"]      -2.3197031551573533e+00
+   &ECNL [&Type "Double"]       0.0000000000000000e+00
+   &EXC [&Type "Double"]      -5.0896674510802100e+01
+   &EEMBED [&Type "Double"]       0.0000000000000000e+00
+   &FINALEN [&Type "Double"]      -6.9893541996227862e+02  "No Van der Waals correction"
+$End
+$Solvation_Details
+   &GeometryIndex 3
+   &ListStatus       OUT
+   &SOLVENT [&Type "String"] "WATER"
+   &EPSILON [&Type "Double"]       8.0150999999999996e+01
+   &REFRAC [&Type "Double"]       1.3328000000000000e+00
+   &RSOLV [&Type "Double"]       1.3000000000000000e+00
+   &SURFACETYPE [&Type "String"] "GAUSSIAN VDW"
+   &NPOINTS [&Type "Integer"] 864
+   &SURFACEAREA [&Type "Double"]       5.1168660902300002e+02
+   &CPCMDIELENERGY [&Type "Double"]      -7.9336800999999998e-02
+$End
+$VdW_Correction
+   &GeometryIndex 3
+   &ListStatus       OUT
+   &VDW [&Type "Double"]      -8.8323052354671895e-03
+$End
+$SCF_Nuc_Gradient
+   &GeometryIndex 3
+   &ListStatus       OUT
+   &NATOMS [&Type "Integer"] 6
+   &ROOT [&Type "Integer"] 0
+   &GRADNORM [&Type "Double"]       1.6972648604397952e-01
+   &GRAD [&Type "ArrayOfDoubles", &Dim (18,1)] 
+                                                         0
+
+0                                      9.1801986738239850e-04
+1                                     -2.8673789992280205e-03
+2                                     -2.1477436334376094e-03
+3                                     -3.5044641200430091e-02
+4                                      1.3386143794679534e-02
+5                                      7.2274283126861322e-02
+6                                      3.7415826758906645e-02
+7                                      2.3392804240258837e-02
+8                                     -4.5074540974534699e-02
+9                                     -3.2241118394324586e-02
+10                                    -7.3408199809742170e-02
+11                                    -2.7817226277302709e-02
+12                                     6.9189298765521337e-02
+13                                     1.5138286817391933e-02
+14                                    -4.1913203054350506e-02
+15                                    -4.0237385761487748e-02
+16                                     2.4358343952105531e-02
+17                                     4.4678430834343807e-02
+$End
+$Geometry
+   &GeometryIndex 4
+   &ListStatus       OUT
+   &NATOMS [&Type "Integer"] 6
+   &NCORELESSECP [&Type "Integer"] 0
+   &NGHOSTATOMS [&Type "Integer"] 0
+   &CartesianCoordinates [&Type "Coordinates", &Dim(6,4), &Units "Bohr"] 
+              Li    -6.366301666630    4.615058164231   -3.870386915248
+              F     -3.607855779470   11.249495086191   -1.542240766709
+              O     -2.025429245513    7.538752363708    0.218729836472
+              P     -4.898559533897    8.550031053561   -0.175288787381
+              F     -6.124518482131   11.200415052363    1.337844243989
+              O     -4.115699389777    7.567206257381    2.616999686733
+$End
+$SCF_Energy
+   &GeometryIndex 4
+   &ListStatus       OUT
+   &SCF_ENERGY [&Type "Double"]      -6.9899627025819814e+02
+$End
+$DFT_Energy
+   &GeometryIndex 4
+   &ListStatus       OUT
+   &NALPHAEL [&Type "Integer"] 26
+   &NBETAEL [&Type "Integer"] 26
+   &NTOTALEL [&Type "Integer"] 52
+   &EEXCHANGE [&Type "Double"]      -4.8631329672746126e+01
+   &ECORR [&Type "Double"]      -2.3239811101935421e+00
+   &ECNL [&Type "Double"]       0.0000000000000000e+00
+   &EXC [&Type "Double"]      -5.0955310782939669e+01
+   &EEMBED [&Type "Double"]       0.0000000000000000e+00
+   &FINALEN [&Type "Double"]      -6.9899627025819814e+02  "No Van der Waals correction"
+$End
+$Solvation_Details
+   &GeometryIndex 4
+   &ListStatus       OUT
+   &SOLVENT [&Type "String"] "WATER"
+   &EPSILON [&Type "Double"]       8.0150999999999996e+01
+   &REFRAC [&Type "Double"]       1.3328000000000000e+00
+   &RSOLV [&Type "Double"]       1.3000000000000000e+00
+   &SURFACETYPE [&Type "String"] "GAUSSIAN VDW"
+   &NPOINTS [&Type "Integer"] 863
+   &SURFACEAREA [&Type "Double"]       5.0593442009500001e+02
+   &CPCMDIELENERGY [&Type "Double"]      -7.6087002000000001e-02
+$End
+$VdW_Correction
+   &GeometryIndex 4
+   &ListStatus       OUT
+   &VDW [&Type "Double"]      -8.7499243936525126e-03
+$End
+$SCF_Nuc_Gradient
+   &GeometryIndex 4
+   &ListStatus       OUT
+   &NATOMS [&Type "Integer"] 6
+   &ROOT [&Type "Integer"] 0
+   &GRADNORM [&Type "Double"]       1.3137095432310331e-01
+   &GRAD [&Type "ArrayOfDoubles", &Dim (18,1)] 
+                                                         0
+
+0                                      8.7218439319114698e-04
+1                                     -3.5755619530017128e-03
+2                                     -2.8204911498731972e-03
+3                                     -1.9721426632664928e-02
+4                                      2.2363335378533189e-02
+5                                      4.1475405183854133e-02
+6                                      4.4080228016506184e-03
+7                                      2.0921901760944148e-02
+8                                     -3.9849544969052866e-02
+9                                      1.2246939387516392e-02
+10                                    -8.5890507988389153e-02
+11                                     1.1998514666199916e-02
+12                                     4.1027023940758231e-02
+13                                     2.2186229499415511e-02
+14                                    -2.2632146871880039e-02
+15                                    -3.8832743844891250e-02
+16                                     2.3994603250902281e-02
+17                                     1.1828263165943348e-02
+$End
+$Geometry
+   &GeometryIndex 5
+   &ListStatus       OUT
+   &NATOMS [&Type "Integer"] 6
+   &NCORELESSECP [&Type "Integer"] 0
+   &NGHOSTATOMS [&Type "Integer"] 0
+   &CartesianCoordinates [&Type "Coordinates", &Dim(6,4), &Units "Bohr"] 
+              Li    -6.350343186048    4.756719613827   -3.814092000859
+              F     -3.578384627830   11.214089359215   -1.730651362202
+              O     -2.206227149670    7.424116405727    0.543590339974
+              P     -4.883763700680    8.667162567927   -0.168428697147
+              F     -6.313925252058   11.170017523631    1.359166697329
+              O     -3.805720181131    7.488852507107    2.396072320763
+$End
+$SCF_Energy
+   &GeometryIndex 5
+   &ListStatus       OUT
+   &SCF_ENERGY [&Type "Double"]      -6.9898926260917585e+02
+$End
+$DFT_Energy
+   &GeometryIndex 5
+   &ListStatus       OUT
+   &NALPHAEL [&Type "Integer"] 26
+   &NBETAEL [&Type "Integer"] 26
+   &NTOTALEL [&Type "Integer"] 52
+   &EEXCHANGE [&Type "Double"]      -4.8744345541306799e+01
+   &ECORR [&Type "Double"]      -2.3325046562570639e+00
+   &ECNL [&Type "Double"]       0.0000000000000000e+00
+   &EXC [&Type "Double"]      -5.1076850197563864e+01
+   &EEMBED [&Type "Double"]       0.0000000000000000e+00
+   &FINALEN [&Type "Double"]      -6.9898926260917585e+02  "No Van der Waals correction"
+$End
+$Solvation_Details
+   &GeometryIndex 5
+   &ListStatus       OUT
+   &SOLVENT [&Type "String"] "WATER"
+   &EPSILON [&Type "Double"]       8.0150999999999996e+01
+   &REFRAC [&Type "Double"]       1.3328000000000000e+00
+   &RSOLV [&Type "Double"]       1.3000000000000000e+00
+   &SURFACETYPE [&Type "String"] "GAUSSIAN VDW"
+   &NPOINTS [&Type "Integer"] 870
+   &SURFACEAREA [&Type "Double"]       5.0290320153800002e+02
+   &CPCMDIELENERGY [&Type "Double"]      -6.8814361000000004e-02
+$End
+$VdW_Correction
+   &GeometryIndex 5
+   &ListStatus       OUT
+   &VDW [&Type "Double"]      -8.4474297419472426e-03
+$End
+$SCF_Nuc_Gradient
+   &GeometryIndex 5
+   &ListStatus       OUT
+   &NATOMS [&Type "Integer"] 6
+   &ROOT [&Type "Integer"] 0
+   &GRADNORM [&Type "Double"]       3.0265090715033183e-01
+   &GRAD [&Type "ArrayOfDoubles", &Dim (18,1)] 
+                                                         0
+
+0                                      2.9317748380257780e-05
+1                                     -4.8338345453571912e-03
+2                                     -4.1327999680096173e-03
+3                                     -5.4675208909682679e-03
+4                                      2.1983875035496814e-02
+5                                      6.3806660726248438e-03
+6                                     -1.5449766359661379e-01
+7                                      1.9820195714454245e-02
+8                                      1.3301717318989184e-01
+9                                      4.1508338081596208e-02
+10                                    -6.8297858945680495e-02
+11                                     3.7698832860429271e-02
+12                                     8.5062938103255270e-03
+13                                     2.1251860886388557e-02
+14                                    -4.1044481399388627e-03
+15                                     1.0992123493621533e-01
+16                                     1.0075761794286889e-02
+17                                    -1.6885942399406564e-01
+$End
+$Geometry
+   &GeometryIndex 6
+   &ListStatus       OUT
+   &NATOMS [&Type "Integer"] 6
+   &NCORELESSECP [&Type "Integer"] 0
+   &NGHOSTATOMS [&Type "Integer"] 0
+   &CartesianCoordinates [&Type "Coordinates", &Dim(6,4), &Units "Bohr"] 
+              Li    -6.378877646688    4.784514772690   -3.796247884198
+              F     -3.561899507987   11.181396722502   -1.705160508956
+              O     -2.027286717374    7.474475543734    0.367860272383
+              P     -4.876777040844    8.657081106000   -0.183595006719
+              F     -6.314078403998   11.121297928000    1.333541844574
+              O     -3.979444780527    7.502191904508    2.569258580772
+$End
+$SCF_Energy
+   &GeometryIndex 6
+   &ListStatus       OUT
+   &SCF_ENERGY [&Type "Double"]      -6.9902764045407912e+02
+$End
+$DFT_Energy
+   &GeometryIndex 6
+   &ListStatus       OUT
+   &NALPHAEL [&Type "Integer"] 26
+   &NBETAEL [&Type "Integer"] 26
+   &NTOTALEL [&Type "Integer"] 52
+   &EEXCHANGE [&Type "Double"]      -4.8638934683121107e+01
+   &ECORR [&Type "Double"]      -2.3246463849316124e+00
+   &ECNL [&Type "Double"]       0.0000000000000000e+00
+   &EXC [&Type "Double"]      -5.0963581068052719e+01
+   &EEMBED [&Type "Double"]       0.0000000000000000e+00
+   &FINALEN [&Type "Double"]      -6.9902764045407912e+02  "No Van der Waals correction"
+$End
+$Solvation_Details
+   &GeometryIndex 6
+   &ListStatus       OUT
+   &SOLVENT [&Type "String"] "WATER"
+   &EPSILON [&Type "Double"]       8.0150999999999996e+01
+   &REFRAC [&Type "Double"]       1.3328000000000000e+00
+   &RSOLV [&Type "Double"]       1.3000000000000000e+00
+   &SURFACETYPE [&Type "String"] "GAUSSIAN VDW"
+   &NPOINTS [&Type "Integer"] 868
+   &SURFACEAREA [&Type "Double"]       5.0559785843300000e+02
+   &CPCMDIELENERGY [&Type "Double"]      -6.8145876999999994e-02
+$End
+$VdW_Correction
+   &GeometryIndex 6
+   &ListStatus       OUT
+   &VDW [&Type "Double"]      -8.3075783085386802e-03
+$End
+$SCF_Nuc_Gradient
+   &GeometryIndex 6
+   &ListStatus       OUT
+   &NATOMS [&Type "Integer"] 6
+   &ROOT [&Type "Integer"] 0
+   &GRADNORM [&Type "Double"]       6.1033512886231017e-02
+   &GRAD [&Type "ArrayOfDoubles", &Dim (18,1)] 
+                                                         0
+
+0                                     -6.7196002642439922e-06
+1                                     -5.4529904075252163e-03
+2                                     -4.6713280602697005e-03
+3                                     -4.8407647364478446e-03
+4                                      1.6701286074014082e-02
+5                                      1.1746815462824814e-02
+6                                     -3.0475441929674607e-03
+7                                      8.6025498256190047e-03
+8                                     -1.1731386526048583e-02
+9                                      6.1498885890196031e-03
+10                                    -4.6764907449980964e-02
+11                                     7.8250027516487408e-03
+12                                     1.3303436489551970e-02
+13                                     1.7771534043405951e-02
+14                                    -3.9556204303166226e-03
+15                                    -1.1558296530160673e-02
+16                                     9.1425278809323107e-03
+17                                     7.8651681692362696e-04
+$End
+$Geometry
+   &GeometryIndex 7
+   &ListStatus       OUT
+   &NATOMS [&Type "Integer"] 6
+   &NCORELESSECP [&Type "Integer"] 0
+   &NGHOSTATOMS [&Type "Integer"] 0
+   &CartesianCoordinates [&Type "Coordinates", &Dim(6,4), &Units "Bohr"] 
+              Li    -6.367463765380    4.941356999441   -3.668586891753
+              F     -3.529823919345   11.131711756427   -1.757725419453
+              O     -2.001348473711    7.461014018983    0.383065972231
+              P     -4.865616760423    8.681349314661   -0.214170843929
+              F     -6.408832800246   11.035044149921    1.294714115381
+              O     -3.965278378312    7.470481738000    2.548360365379
+$End
+$SCF_Energy
+   &GeometryIndex 7
+   &ListStatus       OUT
+   &SCF_ENERGY [&Type "Double"]      -6.9903488029144785e+02
+$End
+$DFT_Energy
+   &GeometryIndex 7
+   &ListStatus       OUT
+   &NALPHAEL [&Type "Integer"] 26
+   &NBETAEL [&Type "Integer"] 26
+   &NTOTALEL [&Type "Integer"] 52
+   &EEXCHANGE [&Type "Double"]      -4.8638081192421737e+01
+   &ECORR [&Type "Double"]      -2.3248559848712511e+00
+   &ECNL [&Type "Double"]       0.0000000000000000e+00
+   &EXC [&Type "Double"]      -5.0962937177292986e+01
+   &EEMBED [&Type "Double"]       0.0000000000000000e+00
+   &FINALEN [&Type "Double"]      -6.9903488029144785e+02  "No Van der Waals correction"
+$End
+$Solvation_Details
+   &GeometryIndex 7
+   &ListStatus       OUT
+   &SOLVENT [&Type "String"] "WATER"
+   &EPSILON [&Type "Double"]       8.0150999999999996e+01
+   &REFRAC [&Type "Double"]       1.3328000000000000e+00
+   &RSOLV [&Type "Double"]       1.3000000000000000e+00
+   &SURFACETYPE [&Type "String"] "GAUSSIAN VDW"
+   &NPOINTS [&Type "Integer"] 857
+   &SURFACEAREA [&Type "Double"]       5.0202365297199998e+02
+   &CPCMDIELENERGY [&Type "Double"]      -6.2717661999999993e-02
+$End
+$VdW_Correction
+   &GeometryIndex 7
+   &ListStatus       OUT
+   &VDW [&Type "Double"]      -7.9095632863836664e-03
+$End
+$SCF_Nuc_Gradient
+   &GeometryIndex 7
+   &ListStatus       OUT
+   &NATOMS [&Type "Integer"] 6
+   &ROOT [&Type "Integer"] 0
+   &GRADNORM [&Type "Double"]       3.5885506620496492e-02
+   &GRAD [&Type "ArrayOfDoubles", &Dim (18,1)] 
+                                                         0
+
+0                                     -6.8357269677145306e-04
+1                                     -7.1697846922985399e-03
+2                                     -6.1616415668747336e-03
+3                                     -7.7150158899172427e-04
+4                                      1.1039905281120505e-02
+5                                      5.0063769684884074e-03
+6                                      6.5593791901413789e-04
+7                                      5.0229969129955004e-03
+8                                     -7.4493832013953210e-03
+9                                      3.3891597858229372e-04
+10                                    -2.5772088230959445e-02
+11                                     3.9666347902549415e-03
+12                                     6.9139461571928046e-03
+13                                     1.2904698383936625e-02
+14                                     4.9505472721612931e-04
+15                                    -6.4537257241516670e-03
+16                                     3.9742723302694100e-03
+17                                     4.1429582986410862e-03
+$End
+$Geometry
+   &GeometryIndex 8
+   &ListStatus       OUT
+   &NATOMS [&Type "Integer"] 6
+   &NCORELESSECP [&Type "Integer"] 0
+   &NGHOSTATOMS [&Type "Integer"] 0
+   &CartesianCoordinates [&Type "Coordinates", &Dim(6,4), &Units "Bohr"] 
+              Li    -6.363725060940    5.183079619554   -3.467825035663
+              F     -3.481815066687   11.062169322633   -1.822627275292
+              O     -1.959592480454    7.447627745332    0.411693288666
+              P     -4.837165873859    8.714752119327   -0.261875095878
+              F     -6.545819520906   10.879786037087    1.219370661511
+              O     -3.950246094570    7.433543133502    2.506920754513
+$End
+$SCF_Energy
+   &GeometryIndex 8
+   &ListStatus       OUT
+   &SCF_ENERGY [&Type "Double"]      -6.9904132731920026e+02
+$End
+$DFT_Energy
+   &GeometryIndex 8
+   &ListStatus       OUT
+   &NALPHAEL [&Type "Integer"] 26
+   &NBETAEL [&Type "Integer"] 26
+   &NTOTALEL [&Type "Integer"] 52
+   &EEXCHANGE [&Type "Double"]      -4.8646275339821926e+01
+   &ECORR [&Type "Double"]      -2.3260612335754582e+00
+   &ECNL [&Type "Double"]       0.0000000000000000e+00
+   &EXC [&Type "Double"]      -5.0972336573397385e+01
+   &EEMBED [&Type "Double"]       0.0000000000000000e+00
+   &FINALEN [&Type "Double"]      -6.9904132731920026e+02  "No Van der Waals correction"
+$End
+$Solvation_Details
+   &GeometryIndex 8
+   &ListStatus       OUT
+   &SOLVENT [&Type "String"] "WATER"
+   &EPSILON [&Type "Double"]       8.0150999999999996e+01
+   &REFRAC [&Type "Double"]       1.3328000000000000e+00
+   &RSOLV [&Type "Double"]       1.3000000000000000e+00
+   &SURFACETYPE [&Type "String"] "GAUSSIAN VDW"
+   &NPOINTS [&Type "Integer"] 846
+   &SURFACEAREA [&Type "Double"]       4.9291995706099999e+02
+   &CPCMDIELENERGY [&Type "Double"]      -5.5071257999999998e-02
+$End
+$VdW_Correction
+   &GeometryIndex 8
+   &ListStatus       OUT
+   &VDW [&Type "Double"]      -7.7781584531463914e-03
+$End
+$SCF_Nuc_Gradient
+   &GeometryIndex 8
+   &ListStatus       OUT
+   &NATOMS [&Type "Integer"] 6
+   &ROOT [&Type "Integer"] 0
+   &GRADNORM [&Type "Double"]       1.3663998302404019e-02
+   &GRAD [&Type "ArrayOfDoubles", &Dim (18,1)] 
+                                                         0
+
+0                                     -9.2113859140705674e-04
+1                                     -7.1272280372094146e-03
+2                                     -6.0369851984742691e-03
+3                                      2.1737167660494938e-03
+4                                      5.2165838303550038e-04
+5                                     -1.1996210212820435e-03
+6                                      1.5062741185518924e-03
+7                                      9.0289031406318165e-04
+8                                     -4.2149615854179465e-04
+9                                     -4.8930740450350840e-03
+10                                     5.2031079598462288e-03
+11                                     3.7990499145490464e-04
+12                                     1.7273543050248946e-03
+13                                     2.1622683515809815e-03
+14                                     3.0553107865924217e-03
+15                                     4.0686747260322217e-04
+16                                    -1.6626970880687930e-03
+17                                     4.2228866081916450e-03
+$End
+$Geometry
+   &GeometryIndex 9
+   &ListStatus       OUT
+   &NATOMS [&Type "Integer"] 6
+   &NCORELESSECP [&Type "Integer"] 0
+   &NGHOSTATOMS [&Type "Integer"] 0
+   &CartesianCoordinates [&Type "Coordinates", &Dim(6,4), &Units "Bohr"] 
+              Li    -6.334750131471    5.376381006862   -3.288446266005
+              F     -3.463823581730   11.026280224808   -1.850131554316
+              O     -1.939207725684    7.428218461052    0.408674748166
+              P     -4.823289013002    8.704248202672   -0.301037245347
+              F     -6.625337862101   10.780861641301    1.147200078465
+              O     -3.951955783429    7.404968440739    2.469397536893
+$End
+$SCF_Energy
+   &GeometryIndex 9
+   &ListStatus       OUT
+   &SCF_ENERGY [&Type "Double"]      -6.9904364163769469e+02
+$End
+$DFT_Energy
+   &GeometryIndex 9
+   &ListStatus       OUT
+   &NALPHAEL [&Type "Integer"] 26
+   &NBETAEL [&Type "Integer"] 26
+   &NTOTALEL [&Type "Integer"] 52
+   &EEXCHANGE [&Type "Double"]      -4.8653822310785330e+01
+   &ECORR [&Type "Double"]      -2.3271888502428726e+00
+   &ECNL [&Type "Double"]       0.0000000000000000e+00
+   &EXC [&Type "Double"]      -5.0981011161028199e+01
+   &EEMBED [&Type "Double"]       0.0000000000000000e+00
+   &FINALEN [&Type "Double"]      -6.9904364163769469e+02  "No Van der Waals correction"
+$End
+$Solvation_Details
+   &GeometryIndex 9
+   &ListStatus       OUT
+   &SOLVENT [&Type "String"] "WATER"
+   &EPSILON [&Type "Double"]       8.0150999999999996e+01
+   &REFRAC [&Type "Double"]       1.3328000000000000e+00
+   &RSOLV [&Type "Double"]       1.3000000000000000e+00
+   &SURFACETYPE [&Type "String"] "GAUSSIAN VDW"
+   &NPOINTS [&Type "Integer"] 841
+   &SURFACEAREA [&Type "Double"]       4.8493533955800001e+02
+   &CPCMDIELENERGY [&Type "Double"]      -5.0318507999999998e-02
+$End
+$VdW_Correction
+   &GeometryIndex 9
+   &ListStatus       OUT
+   &VDW [&Type "Double"]      -7.8015599709695214e-03
+$End
+$SCF_Nuc_Gradient
+   &GeometryIndex 9
+   &ListStatus       OUT
+   &NATOMS [&Type "Integer"] 6
+   &ROOT [&Type "Integer"] 0
+   &GRADNORM [&Type "Double"]       1.8667273710006375e-02
+   &GRAD [&Type "ArrayOfDoubles", &Dim (18,1)] 
+                                                         0
+
+0                                      3.8042973508651493e-04
+1                                     -3.7163401031440162e-03
+2                                     -2.9300396353545699e-03
+3                                      2.9741862929144880e-03
+4                                     -3.1639833327975209e-03
+5                                     -3.0126703653091530e-03
+6                                      1.5880874988216942e-03
+7                                     -1.4182652349230274e-04
+8                                      1.9118746357742016e-03
+9                                     -8.1037095570979933e-03
+10                                     1.2720687660220886e-02
+11                                    -3.3407630490410178e-03
+12                                     5.6589618312137546e-04
+13                                    -1.8263718891945724e-03
+14                                     3.1404381329043357e-03
+15                                     2.5951099159508776e-03
+16                                    -3.8721658236367251e-03
+17                                     4.2311602827982686e-03
+$End
+$Geometry
+   &GeometryIndex 10
+   &ListStatus       OUT
+   &NATOMS [&Type "Integer"] 6
+   &NCORELESSECP [&Type "Integer"] 0
+   &NGHOSTATOMS [&Type "Integer"] 0
+   &CartesianCoordinates [&Type "Coordinates", &Dim(6,4), &Units "Bohr"] 
+              Li    -6.320577920900    5.508254027456   -3.153111009671
+              F     -3.454656779719   11.019569353102   -1.844473911967
+              O     -1.922047781047    7.408030209884    0.397650001016
+              P     -4.807299409991    8.678282401351   -0.329940232083
+              F     -6.679930103022   10.714715570551    1.076860581642
+              O     -3.953852102738    7.392106415090    2.438671868919
+$End
+$SCF_Energy
+   &GeometryIndex 10
+   &ListStatus       OUT
+   &SCF_ENERGY [&Type "Double"]      -6.9904430601040406e+02
+$End
+$DFT_Energy
+   &GeometryIndex 10
+   &ListStatus       OUT
+   &NALPHAEL [&Type "Integer"] 26
+   &NBETAEL [&Type "Integer"] 26
+   &NTOTALEL [&Type "Integer"] 52
+   &EEXCHANGE [&Type "Double"]      -4.8661121229368931e+01
+   &ECORR [&Type "Double"]      -2.3281549116365339e+00
+   &ECNL [&Type "Double"]       0.0000000000000000e+00
+   &EXC [&Type "Double"]      -5.0989276141005462e+01
+   &EEMBED [&Type "Double"]       0.0000000000000000e+00
+   &FINALEN [&Type "Double"]      -6.9904430601040406e+02  "No Van der Waals correction"
+$End
+$Solvation_Details
+   &GeometryIndex 10
+   &ListStatus       OUT
+   &SOLVENT [&Type "String"] "WATER"
+   &EPSILON [&Type "Double"]       8.0150999999999996e+01
+   &REFRAC [&Type "Double"]       1.3328000000000000e+00
+   &RSOLV [&Type "Double"]       1.3000000000000000e+00
+   &SURFACETYPE [&Type "String"] "GAUSSIAN VDW"
+   &NPOINTS [&Type "Integer"] 823
+   &SURFACEAREA [&Type "Double"]       4.8019522378599999e+02
+   &CPCMDIELENERGY [&Type "Double"]      -4.7575826000000002e-02
+$End
+$VdW_Correction
+   &GeometryIndex 10
+   &ListStatus       OUT
+   &VDW [&Type "Double"]      -7.8418182280216957e-03
+$End
+$SCF_Nuc_Gradient
+   &GeometryIndex 10
+   &ListStatus       OUT
+   &NATOMS [&Type "Integer"] 6
+   &ROOT [&Type "Integer"] 0
+   &GRADNORM [&Type "Double"]       1.6765438256274280e-02
+   &GRAD [&Type "ArrayOfDoubles", &Dim (18,1)] 
+                                                         0
+
+0                                      2.4265979172025738e-03
+1                                      1.3149879877072789e-03
+2                                      1.5116742693511397e-03
+3                                      2.8069299190956881e-03
+4                                     -2.8363661532334883e-03
+5                                     -3.5421858854860350e-03
+6                                      1.0506913078011659e-03
+7                                      2.0648389240172926e-04
+8                                      2.1814246346690477e-03
+9                                     -9.3123002985694425e-03
+10                                     8.0216485207171839e-03
+11                                    -6.0348803044176225e-03
+12                                     5.7329551710189053e-04
+13                                    -2.2162749801507009e-03
+14                                     2.4062308971748575e-03
+15                                     2.4547856931630323e-03
+16                                    -4.4904792928137788e-03
+17                                     3.4777363989647037e-03
+$End
+$Geometry
+   &GeometryIndex 11
+   &ListStatus       OUT
+   &NATOMS [&Type "Integer"] 6
+   &NCORELESSECP [&Type "Integer"] 0
+   &NGHOSTATOMS [&Type "Integer"] 0
+   &CartesianCoordinates [&Type "Coordinates", &Dim(6,4), &Units "Bohr"] 
+              Li    -6.350942878642    5.491896249740   -3.156257224189
+              F     -3.447486929054   11.040438143469   -1.811778782212
+              O     -1.910202760709    7.405317822800    0.396089501306
+              P     -4.792272075627    8.668460140333   -0.330377271677
+              F     -6.689865582078   10.708218160544    1.052699741709
+              O     -3.947593871306    7.406627460548    2.435281332918
+$End
+$SCF_Energy
+   &GeometryIndex 11
+   &ListStatus       OUT
+   &SCF_ENERGY [&Type "Double"]      -6.9904481341271230e+02
+$End
+$DFT_Energy
+   &GeometryIndex 11
+   &ListStatus       OUT
+   &NALPHAEL [&Type "Integer"] 26
+   &NBETAEL [&Type "Integer"] 26
+   &NTOTALEL [&Type "Integer"] 52
+   &EEXCHANGE [&Type "Double"]      -4.8661771420840090e+01
+   &ECORR [&Type "Double"]      -2.3281737444547597e+00
+   &ECNL [&Type "Double"]       0.0000000000000000e+00
+   &EXC [&Type "Double"]      -5.0989945165294849e+01
+   &EEMBED [&Type "Double"]       0.0000000000000000e+00
+   &FINALEN [&Type "Double"]      -6.9904481341271230e+02  "No Van der Waals correction"
+$End
+$Solvation_Details
+   &GeometryIndex 11
+   &ListStatus       OUT
+   &SOLVENT [&Type "String"] "WATER"
+   &EPSILON [&Type "Double"]       8.0150999999999996e+01
+   &REFRAC [&Type "Double"]       1.3328000000000000e+00
+   &RSOLV [&Type "Double"]       1.3000000000000000e+00
+   &SURFACETYPE [&Type "String"] "GAUSSIAN VDW"
+   &NPOINTS [&Type "Integer"] 826
+   &SURFACEAREA [&Type "Double"]       4.8051577150700001e+02
+   &CPCMDIELENERGY [&Type "Double"]      -4.8003674000000003e-02
+$End
+$VdW_Correction
+   &GeometryIndex 11
+   &ListStatus       OUT
+   &VDW [&Type "Double"]      -7.8375874591450623e-03
+$End
+$SCF_Nuc_Gradient
+   &GeometryIndex 11
+   &ListStatus       OUT
+   &NATOMS [&Type "Integer"] 6
+   &ROOT [&Type "Integer"] 0
+   &GRADNORM [&Type "Double"]       1.1146485144152792e-02
+   &GRAD [&Type "ArrayOfDoubles", &Dim (18,1)] 
+                                                         0
+
+0                                      2.0663663414967944e-03
+1                                      6.5878998334735830e-04
+2                                      1.1171736895678012e-03
+3                                      1.9954165960663905e-03
+4                                     -1.0811564589648937e-03
+5                                     -3.0246098652402104e-03
+6                                      1.7403011176975181e-05
+7                                      1.0775485602113749e-03
+8                                      1.4066177297164806e-03
+9                                     -6.7819287006897211e-03
+10                                     4.1690634360720957e-03
+11                                    -3.2213890552533764e-03
+12                                     1.3957992582489948e-03
+13                                    -8.8020055130755281e-04
+14                                     1.5558733003883524e-03
+15                                     1.3069435333199421e-03
+16                                    -3.9440450420650391e-03
+17                                     2.1663342117180795e-03
+$End
+$Geometry
+   &GeometryIndex 12
+   &ListStatus       OUT
+   &NATOMS [&Type "Integer"] 6
+   &NCORELESSECP [&Type "Integer"] 0
+   &NGHOSTATOMS [&Type "Integer"] 0
+   &CartesianCoordinates [&Type "Coordinates", &Dim(6,4), &Units "Bohr"] 
+              Li    -6.505412928960    5.486651718548   -3.117983110253
+              F     -3.399743523356   11.118380920298   -1.650411825973
+              O     -1.835949233146    7.379739568714    0.387599272067
+              P     -4.710223094793    8.627767232506   -0.345707846519
+              F     -6.779181103317   10.619252868886    0.898907796479
+              O     -3.907854213844    7.489165668481    2.413253012055
+$End
+$SCF_Energy
+   &GeometryIndex 12
+   &ListStatus       OUT
+   &SCF_ENERGY [&Type "Double"]      -6.9904611715878298e+02
+$End
+$DFT_Energy
+   &GeometryIndex 12
+   &ListStatus       OUT
+   &NALPHAEL [&Type "Integer"] 26
+   &NBETAEL [&Type "Integer"] 26
+   &NTOTALEL [&Type "Integer"] 52
+   &EEXCHANGE [&Type "Double"]      -4.8668817376204871e+01
+   &ECORR [&Type "Double"]      -2.3286563911966600e+00
+   &ECNL [&Type "Double"]       0.0000000000000000e+00
+   &EXC [&Type "Double"]      -5.0997473767401530e+01
+   &EEMBED [&Type "Double"]       0.0000000000000000e+00
+   &FINALEN [&Type "Double"]      -6.9904611715878298e+02  "No Van der Waals correction"
+$End
+$Solvation_Details
+   &GeometryIndex 12
+   &ListStatus       OUT
+   &SOLVENT [&Type "String"] "WATER"
+   &EPSILON [&Type "Double"]       8.0150999999999996e+01
+   &REFRAC [&Type "Double"]       1.3328000000000000e+00
+   &RSOLV [&Type "Double"]       1.3000000000000000e+00
+   &SURFACETYPE [&Type "String"] "GAUSSIAN VDW"
+   &NPOINTS [&Type "Integer"] 826
+   &SURFACEAREA [&Type "Double"]       4.7880006453599998e+02
+   &CPCMDIELENERGY [&Type "Double"]      -4.8623251999999999e-02
+$End
+$VdW_Correction
+   &GeometryIndex 12
+   &ListStatus       OUT
+   &VDW [&Type "Double"]      -7.8354068577903748e-03
+$End
+$SCF_Nuc_Gradient
+   &GeometryIndex 12
+   &ListStatus       OUT
+   &NATOMS [&Type "Integer"] 6
+   &ROOT [&Type "Integer"] 0
+   &GRADNORM [&Type "Double"]       1.6580773683615876e-02
+   &GRAD [&Type "ArrayOfDoubles", &Dim (18,1)] 
+                                                         0
+
+0                                      9.6039230071544388e-04
+1                                     -1.3753586518856775e-04
+2                                      1.1140441203940409e-03
+3                                     -2.1405094857805118e-03
+4                                      3.3579092418714873e-03
+5                                     -1.0265616465009314e-03
+6                                     -2.8365202905946962e-03
+7                                      4.3466899889519073e-03
+8                                     -2.6349821145175492e-03
+9                                      3.4767543954166424e-03
+10                                    -7.5464981347616311e-03
+11                                     8.5819820264057822e-03
+12                                     5.3543361435321457e-03
+13                                     2.0742375110534145e-03
+14                                    -2.5113048339084065e-03
+15                                    -4.8144530280017101e-03
+16                                    -2.0948027713046102e-03
+17                                    -3.5231775364408802e-03
+$End
+$Geometry
+   &GeometryIndex 13
+   &ListStatus       OUT
+   &NATOMS [&Type "Integer"] 6
+   &NCORELESSECP [&Type "Integer"] 0
+   &NGHOSTATOMS [&Type "Integer"] 0
+   &CartesianCoordinates [&Type "Coordinates", &Dim(6,4), &Units "Bohr"] 
+              Li    -6.608793093853    5.496183467388   -3.102328490923
+              F     -3.362469059946   11.149885892653   -1.548097946330
+              O     -1.785736660729    7.357115875893    0.382212151626
+              P     -4.663132924866    8.613866098729   -0.354111464307
+              F     -6.851401048970   10.546521167530    0.797499035724
+              O     -3.866831309053    7.557385475242    2.410484012066
+$End
+$SCF_Energy
+   &GeometryIndex 13
+   &ListStatus       OUT
+   &SCF_ENERGY [&Type "Double"]      -6.9904684110719813e+02
+$End
+$DFT_Energy
+   &GeometryIndex 13
+   &ListStatus       OUT
+   &NALPHAEL [&Type "Integer"] 26
+   &NBETAEL [&Type "Integer"] 26
+   &NTOTALEL [&Type "Integer"] 52
+   &EEXCHANGE [&Type "Double"]      -4.8670433291685825e+01
+   &ECORR [&Type "Double"]      -2.3286923669654795e+00
+   &ECNL [&Type "Double"]       0.0000000000000000e+00
+   &EXC [&Type "Double"]      -5.0999125658651302e+01
+   &EEMBED [&Type "Double"]       0.0000000000000000e+00
+   &FINALEN [&Type "Double"]      -6.9904684110719813e+02  "No Van der Waals correction"
+$End
+$Solvation_Details
+   &GeometryIndex 13
+   &ListStatus       OUT
+   &SOLVENT [&Type "String"] "WATER"
+   &EPSILON [&Type "Double"]       8.0150999999999996e+01
+   &REFRAC [&Type "Double"]       1.3328000000000000e+00
+   &RSOLV [&Type "Double"]       1.3000000000000000e+00
+   &SURFACETYPE [&Type "String"] "GAUSSIAN VDW"
+   &NPOINTS [&Type "Integer"] 832
+   &SURFACEAREA [&Type "Double"]       4.7920863716000002e+02
+   &CPCMDIELENERGY [&Type "Double"]      -4.8885972000000000e-02
+$End
+$VdW_Correction
+   &GeometryIndex 13
+   &ListStatus       OUT
+   &VDW [&Type "Double"]      -7.8305731338484015e-03
+$End
+$SCF_Nuc_Gradient
+   &GeometryIndex 13
+   &ListStatus       OUT
+   &NATOMS [&Type "Integer"] 6
+   &ROOT [&Type "Integer"] 0
+   &GRADNORM [&Type "Double"]       2.3564005350105149e-02
+   &GRAD [&Type "ArrayOfDoubles", &Dim (18,1)] 
+                                                         0
+
+0                                      7.1226715401600561e-05
+1                                     -8.0559277538363137e-04
+2                                      7.1552330644402730e-04
+3                                     -3.6656681986919765e-03
+4                                      3.3555812276407915e-03
+5                                     -5.1320813550141675e-04
+6                                     -2.5314489234676829e-03
+7                                      5.3824174642814610e-03
+8                                     -5.2237903746489116e-03
+9                                      7.2983289965783682e-03
+10                                    -8.2840080426898333e-03
+11                                     1.3864911108864147e-02
+12                                     6.5665736627746052e-03
+13                                     2.4274075215568736e-03
+14                                    -4.3067324643939892e-03
+15                                    -7.7390122129048465e-03
+16                                    -2.0758054046432495e-03
+17                                    -4.5367034232170755e-03
+$End
+$Geometry
+   &GeometryIndex 14
+   &ListStatus       OUT
+   &NATOMS [&Type "Integer"] 6
+   &NCORELESSECP [&Type "Integer"] 0
+   &NGHOSTATOMS [&Type "Integer"] 0
+   &CartesianCoordinates [&Type "Coordinates", &Dim(6,4), &Units "Bohr"] 
+              Li    -6.841283407083    5.552807504645   -3.068307958870
+              F     -3.284517316609   11.194021555278   -1.308866797380
+              O     -1.667987561595    7.288498194873    0.366809148150
+              P     -4.566484800121    8.587879840280   -0.373951107850
+              F     -7.021564163890   10.350766515757    0.552764214342
+              O     -3.756526848118    7.746984366600    2.417209799464
+$End
+$SCF_Energy
+   &GeometryIndex 14
+   &ListStatus       OUT
+   &SCF_ENERGY [&Type "Double"]      -6.9904809996380311e+02
+$End
+$DFT_Energy
+   &GeometryIndex 14
+   &ListStatus       OUT
+   &NALPHAEL [&Type "Integer"] 26
+   &NBETAEL [&Type "Integer"] 26
+   &NTOTALEL [&Type "Integer"] 52
+   &EEXCHANGE [&Type "Double"]      -4.8667301244212261e+01
+   &ECORR [&Type "Double"]      -2.3281740731255764e+00
+   &ECNL [&Type "Double"]       0.0000000000000000e+00
+   &EXC [&Type "Double"]      -5.0995475317337835e+01
+   &EEMBED [&Type "Double"]       0.0000000000000000e+00
+   &FINALEN [&Type "Double"]      -6.9904809996380311e+02  "No Van der Waals correction"
+$End
+$Solvation_Details
+   &GeometryIndex 14
+   &ListStatus       OUT
+   &SOLVENT [&Type "String"] "WATER"
+   &EPSILON [&Type "Double"]       8.0150999999999996e+01
+   &REFRAC [&Type "Double"]       1.3328000000000000e+00
+   &RSOLV [&Type "Double"]       1.3000000000000000e+00
+   &SURFACETYPE [&Type "String"] "GAUSSIAN VDW"
+   &NPOINTS [&Type "Integer"] 842
+   &SURFACEAREA [&Type "Double"]       4.8601222229199999e+02
+   &CPCMDIELENERGY [&Type "Double"]      -4.9260361000000003e-02
+$End
+$VdW_Correction
+   &GeometryIndex 14
+   &ListStatus       OUT
+   &VDW [&Type "Double"]      -7.8208566438597027e-03
+$End
+$SCF_Nuc_Gradient
+   &GeometryIndex 14
+   &ListStatus       OUT
+   &NATOMS [&Type "Integer"] 6
+   &ROOT [&Type "Integer"] 0
+   &GRADNORM [&Type "Double"]       3.3046435483839148e-02
+   &GRAD [&Type "ArrayOfDoubles", &Dim (18,1)] 
+                                                         0
+
+0                                     -1.7770525197555870e-03
+1                                     -1.7361669333729700e-03
+2                                     -2.6933755443289339e-05
+3                                     -5.5641857909832781e-03
+4                                     -3.7927424844247382e-04
+5                                      1.5006130617164631e-03
+6                                      3.5956226358206944e-03
+7                                      3.7373278256930542e-03
+8                                     -1.2924061868176896e-02
+9                                      1.1466827340592761e-02
+10                                    -3.8792677115083996e-03
+11                                     2.0400278485907947e-02
+12                                     6.3862791884212733e-03
+13                                     2.1668693482355672e-03
+14                                    -6.8564108259184034e-03
+15                                    -1.4107490815342712e-02
+16                                     9.0511731980380539e-05
+17                                    -2.0934850809309347e-03
+$End
+$Geometry
+   &GeometryIndex 15
+   &ListStatus       OUT
+   &NATOMS [&Type "Integer"] 6
+   &NCORELESSECP [&Type "Integer"] 0
+   &NGHOSTATOMS [&Type "Integer"] 0
+   &CartesianCoordinates [&Type "Coordinates", &Dim(6,4), &Units "Bohr"] 
+              Li    -6.821399617392    5.556524722716   -3.099431564830
+              F     -3.279539999381   11.173350586694   -1.353438151464
+              O     -1.683350649320    7.286602441501    0.384406151194
+              P     -4.586134910506    8.598878585813   -0.373110827640
+              F     -7.029795719706   10.357900637454    0.594713639340
+              O     -3.738143201112    7.747701003256    2.432518051255
+$End
+$SCF_Energy
+   &GeometryIndex 15
+   &ListStatus       OUT
+   &SCF_ENERGY [&Type "Double"]      -6.9904909811993809e+02
+$End
+$DFT_Energy
+   &GeometryIndex 15
+   &ListStatus       OUT
+   &NALPHAEL [&Type "Integer"] 26
+   &NBETAEL [&Type "Integer"] 26
+   &NTOTALEL [&Type "Integer"] 52
+   &EEXCHANGE [&Type "Double"]      -4.8663351897396396e+01
+   &ECORR [&Type "Double"]      -2.3278667487391211e+00
+   &ECNL [&Type "Double"]       0.0000000000000000e+00
+   &EXC [&Type "Double"]      -5.0991218646135515e+01
+   &EEMBED [&Type "Double"]       0.0000000000000000e+00
+   &FINALEN [&Type "Double"]      -6.9904909811993809e+02  "No Van der Waals correction"
+$End
+$Solvation_Details
+   &GeometryIndex 15
+   &ListStatus       OUT
+   &SOLVENT [&Type "String"] "WATER"
+   &EPSILON [&Type "Double"]       8.0150999999999996e+01
+   &REFRAC [&Type "Double"]       1.3328000000000000e+00
+   &RSOLV [&Type "Double"]       1.3000000000000000e+00
+   &SURFACETYPE [&Type "String"] "GAUSSIAN VDW"
+   &NPOINTS [&Type "Integer"] 841
+   &SURFACEAREA [&Type "Double"]       4.8619316354099999e+02
+   &CPCMDIELENERGY [&Type "Double"]      -4.9758370000000003e-02
+$End
+$VdW_Correction
+   &GeometryIndex 15
+   &ListStatus       OUT
+   &VDW [&Type "Double"]      -7.8068147446617138e-03
+$End
+$SCF_Nuc_Gradient
+   &GeometryIndex 15
+   &ListStatus       OUT
+   &NATOMS [&Type "Integer"] 6
+   &ROOT [&Type "Integer"] 0
+   &GRADNORM [&Type "Double"]       2.0444519690711521e-02
+   &GRAD [&Type "ArrayOfDoubles", &Dim (18,1)] 
+                                                         0
+
+0                                     -1.7226427528883575e-03
+1                                     -1.7090232694057569e-03
+2                                     -2.6348055397602821e-04
+3                                     -2.7926681089925770e-03
+4                                     -1.1617405239804646e-03
+5                                      2.4254861909212000e-05
+6                                      2.1823900782327599e-03
+7                                      3.7504556533539402e-03
+8                                     -8.7411275467796229e-03
+9                                      7.2938102061491650e-03
+10                                     9.8086755963983085e-04
+11                                     1.1550152521245444e-02
+12                                     3.2644080198286629e-03
+13                                     1.2253694143150029e-03
+14                                    -4.9882315694187024e-03
+15                                    -8.2252974205429524e-03
+16                                    -3.0859288751369507e-03
+17                                     2.4184323195046153e-03
+$End
+$Geometry
+   &GeometryIndex 16
+   &ListStatus       OUT
+   &NATOMS [&Type "Integer"] 6
+   &NCORELESSECP [&Type "Integer"] 0
+   &NGHOSTATOMS [&Type "Integer"] 0
+   &CartesianCoordinates [&Type "Coordinates", &Dim(6,4), &Units "Bohr"] 
+              Li    -6.841467078588    5.616426590038   -3.128424474807
+              F     -3.262931960638   11.147846570340   -1.354397374182
+              O     -1.676382655764    7.228829204163    0.414740125189
+              P     -4.590161147582    8.591901984335   -0.384820368342
+              F     -7.098137386909   10.289538544760    0.591813545684
+              O     -3.669283867936    7.846415083797    2.446745844314
+$End
+$SCF_Energy
+   &GeometryIndex 16
+   &ListStatus       OUT
+   &SCF_ENERGY [&Type "Double"]      -6.9905028247988366e+02
+$End
+$DFT_Energy
+   &GeometryIndex 16
+   &ListStatus       OUT
+   &NALPHAEL [&Type "Integer"] 26
+   &NBETAEL [&Type "Integer"] 26
+   &NTOTALEL [&Type "Integer"] 52
+   &EEXCHANGE [&Type "Double"]      -4.8657356592053873e+01
+   &ECORR [&Type "Double"]      -2.3273475023409471e+00
+   &ECNL [&Type "Double"]       0.0000000000000000e+00
+   &EXC [&Type "Double"]      -5.0984704094394822e+01
+   &EEMBED [&Type "Double"]       0.0000000000000000e+00
+   &FINALEN [&Type "Double"]      -6.9905028247988366e+02  "No Van der Waals correction"
+$End
+$Solvation_Details
+   &GeometryIndex 16
+   &ListStatus       OUT
+   &SOLVENT [&Type "String"] "WATER"
+   &EPSILON [&Type "Double"]       8.0150999999999996e+01
+   &REFRAC [&Type "Double"]       1.3328000000000000e+00
+   &RSOLV [&Type "Double"]       1.3000000000000000e+00
+   &SURFACETYPE [&Type "String"] "GAUSSIAN VDW"
+   &NPOINTS [&Type "Integer"] 841
+   &SURFACEAREA [&Type "Double"]       4.8565683652600001e+02
+   &CPCMDIELENERGY [&Type "Double"]      -5.0595747000000003e-02
+$End
+$VdW_Correction
+   &GeometryIndex 16
+   &ListStatus       OUT
+   &VDW [&Type "Double"]      -7.7888469665962010e-03
+$End
+$SCF_Nuc_Gradient
+   &GeometryIndex 16
+   &ListStatus       OUT
+   &NATOMS [&Type "Integer"] 6
+   &ROOT [&Type "Integer"] 0
+   &GRADNORM [&Type "Double"]       1.0493235678567490e-02
+   &GRAD [&Type "ArrayOfDoubles", &Dim (18,1)] 
+                                                         0
+
+0                                     -1.2940513708632568e-03
+1                                     -7.6707024975005561e-04
+2                                      1.8429594467719509e-04
+3                                      3.6355940865209768e-04
+4                                     -1.4674949214500965e-03
+5                                     -8.4331530846094849e-04
+6                                      1.8646752274646683e-03
+7                                      1.7718592269290179e-03
+8                                     -3.0616033558544808e-03
+9                                      1.9004337374239899e-03
+10                                     4.2314147824932258e-03
+11                                    -9.4460805145596405e-04
+12                                    -1.6695548934622384e-03
+13                                     4.1924983571627050e-04
+14                                    -1.7706582027100654e-03
+15                                    -1.1650620593004028e-03
+16                                    -4.1879586759772450e-03
+17                                     6.4358889928141094e-03
+$End
+$Geometry
+   &GeometryIndex 17
+   &ListStatus       OUT
+   &NATOMS [&Type "Integer"] 6
+   &NCORELESSECP [&Type "Integer"] 0
+   &NGHOSTATOMS [&Type "Integer"] 0
+   &CartesianCoordinates [&Type "Coordinates", &Dim(6,4), &Units "Bohr"] 
+              Li    -6.820948927261    5.644330204559   -3.154830909836
+              F     -3.272144525190   11.131490372208   -1.374347307558
+              O     -1.688956578752    7.185690247857    0.432339040965
+              P     -4.600771643762    8.580370563409   -0.386168040305
+              F     -7.112950920024   10.272620728559    0.623391010548
+              O     -3.642591502428    7.906455860843    2.445273504043
+$End
+$SCF_Energy
+   &GeometryIndex 17
+   &ListStatus       OUT
+   &SCF_ENERGY [&Type "Double"]      -6.9905066740257757e+02
+$End
+$DFT_Energy
+   &GeometryIndex 17
+   &ListStatus       OUT
+   &NALPHAEL [&Type "Integer"] 26
+   &NBETAEL [&Type "Integer"] 26
+   &NTOTALEL [&Type "Integer"] 52
+   &EEXCHANGE [&Type "Double"]      -4.8657218178388263e+01
+   &ECORR [&Type "Double"]      -2.3273371468247595e+00
+   &ECNL [&Type "Double"]       0.0000000000000000e+00
+   &EXC [&Type "Double"]      -5.0984555325213023e+01
+   &EEMBED [&Type "Double"]       0.0000000000000000e+00
+   &FINALEN [&Type "Double"]      -6.9905066740257757e+02  "No Van der Waals correction"
+$End
+$Solvation_Details
+   &GeometryIndex 17
+   &ListStatus       OUT
+   &SOLVENT [&Type "String"] "WATER"
+   &EPSILON [&Type "Double"]       8.0150999999999996e+01
+   &REFRAC [&Type "Double"]       1.3328000000000000e+00
+   &RSOLV [&Type "Double"]       1.3000000000000000e+00
+   &SURFACETYPE [&Type "String"] "GAUSSIAN VDW"
+   &NPOINTS [&Type "Integer"] 839
+   &SURFACEAREA [&Type "Double"]       4.8422546571999999e+02
+   &CPCMDIELENERGY [&Type "Double"]      -5.1090051999999997e-02
+$End
+$VdW_Correction
+   &GeometryIndex 17
+   &ListStatus       OUT
+   &VDW [&Type "Double"]      -7.7850614279212534e-03
+$End
+$SCF_Nuc_Gradient
+   &GeometryIndex 17
+   &ListStatus       OUT
+   &NATOMS [&Type "Integer"] 6
+   &ROOT [&Type "Integer"] 0
+   &GRADNORM [&Type "Double"]       8.3680881497554867e-03
+   &GRAD [&Type "ArrayOfDoubles", &Dim (18,1)] 
+                                                         0
+
+0                                     -7.6761302070682460e-04
+1                                     -2.9020492663619363e-05
+2                                      6.2520725085406844e-04
+3                                      1.1130470226994177e-03
+4                                      4.2435275836699704e-04
+5                                     -1.1962442900871756e-03
+6                                      4.9067993059601078e-04
+7                                      1.0019794719142300e-03
+8                                      6.8861552661701048e-04
+9                                      8.0320704016115241e-04
+10                                     1.1442672012234312e-03
+11                                    -4.8660764363122888e-03
+12                                    -2.8082060985853419e-03
+13                                     7.1928909325867652e-04
+14                                     4.8152391131556227e-04
+15                                     1.1688851825370876e-03
+16                                    -3.2608680299112680e-03
+17                                     4.2669740553010205e-03
+$End
+$Geometry
+   &GeometryIndex 18
+   &ListStatus       OUT
+   &NATOMS [&Type "Integer"] 6
+   &NCORELESSECP [&Type "Integer"] 0
+   &NGHOSTATOMS [&Type "Integer"] 0
+   &CartesianCoordinates [&Type "Coordinates", &Dim(6,4), &Units "Bohr"] 
+              Li    -6.814479743825    5.660097657256   -3.188035442742
+              F     -3.277807267713   11.114222259974   -1.367774588558
+              O     -1.696767258509    7.141747727957    0.436704750970
+              P     -4.609266503832    8.566588774051   -0.377047926937
+              F     -7.130308906840   10.256746269417    0.638075450547
+              O     -3.609734416698    7.981555288779    2.443735054576
+$End
+$SCF_Energy
+   &GeometryIndex 18
+   &ListStatus       OUT
+   &SCF_ENERGY [&Type "Double"]      -6.9905086688180756e+02
+$End
+$DFT_Energy
+   &GeometryIndex 18
+   &ListStatus       OUT
+   &NALPHAEL [&Type "Integer"] 26
+   &NBETAEL [&Type "Integer"] 26
+   &NTOTALEL [&Type "Integer"] 52
+   &EEXCHANGE [&Type "Double"]      -4.8657828283538045e+01
+   &ECORR [&Type "Double"]      -2.3273354839935765e+00
+   &ECNL [&Type "Double"]       0.0000000000000000e+00
+   &EXC [&Type "Double"]      -5.0985163767531624e+01
+   &EEMBED [&Type "Double"]       0.0000000000000000e+00
+   &FINALEN [&Type "Double"]      -6.9905086688180756e+02  "No Van der Waals correction"
+$End
+$Solvation_Details
+   &GeometryIndex 18
+   &ListStatus       OUT
+   &SOLVENT [&Type "String"] "WATER"
+   &EPSILON [&Type "Double"]       8.0150999999999996e+01
+   &REFRAC [&Type "Double"]       1.3328000000000000e+00
+   &RSOLV [&Type "Double"]       1.3000000000000000e+00
+   &SURFACETYPE [&Type "String"] "GAUSSIAN VDW"
+   &NPOINTS [&Type "Integer"] 841
+   &SURFACEAREA [&Type "Double"]       4.8332966372200002e+02
+   &CPCMDIELENERGY [&Type "Double"]      -5.1621302000000001e-02
+$End
+$VdW_Correction
+   &GeometryIndex 18
+   &ListStatus       OUT
+   &VDW [&Type "Double"]      -7.7826162515110386e-03
+$End
+$SCF_Nuc_Gradient
+   &GeometryIndex 18
+   &ListStatus       OUT
+   &NATOMS [&Type "Integer"] 6
+   &ROOT [&Type "Integer"] 0
+   &GRADNORM [&Type "Double"]       6.6194468703675300e-03
+   &GRAD [&Type "ArrayOfDoubles", &Dim (18,1)] 
+                                                         0
+
+0                                     -6.5134836270588047e-04
+1                                      1.3772577338501228e-04
+2                                      5.4445262008703029e-04
+3                                      1.2109926431062706e-03
+4                                      9.8270710593081900e-04
+5                                     -1.6399726526036829e-04
+6                                      8.1169019893745364e-04
+7                                      2.0118347714570550e-04
+8                                      9.8385757047023820e-04
+9                                      1.2390496410517593e-03
+10                                    -1.7131249749559041e-03
+11                                    -4.2875459831984708e-03
+12                                    -3.1242675038240242e-03
+13                                     1.1198318990245232e-03
+14                                     1.3730654580739396e-03
+15                                     5.1388341823998748e-04
+16                                    -7.2832333155868623e-04
+17                                     1.5501676174738410e-03
+$End
+$Geometry
+   &GeometryIndex 19
+   &ListStatus       OUT
+   &NATOMS [&Type "Integer"] 6
+   &NCORELESSECP [&Type "Integer"] 0
+   &NGHOSTATOMS [&Type "Integer"] 0
+   &CartesianCoordinates [&Type "Coordinates", &Dim(6,4), &Units "Bohr"] 
+              Li    -6.760154604378    5.655304558764   -3.226885191824
+              F     -3.300458972510   11.090574651378   -1.405955394320
+              O     -1.728947167975    7.120072050068    0.435457933631
+              P     -4.636644861317    8.562730542410   -0.358772133275
+              F     -7.110741610931   10.288402946435    0.696107140371
+              O     -3.601416880305    8.003873228378    2.445704943272
+$End
+$SCF_Energy
+   &GeometryIndex 19
+   &ListStatus       OUT
+   &SCF_ENERGY [&Type "Double"]      -6.9905097882504856e+02
+$End
+$DFT_Energy
+   &GeometryIndex 19
+   &ListStatus       OUT
+   &NALPHAEL [&Type "Integer"] 26
+   &NBETAEL [&Type "Integer"] 26
+   &NTOTALEL [&Type "Integer"] 52
+   &EEXCHANGE [&Type "Double"]      -4.8660995749924908e+01
+   &ECORR [&Type "Double"]      -2.3276136739065647e+00
+   &ECNL [&Type "Double"]       0.0000000000000000e+00
+   &EXC [&Type "Double"]      -5.0988609423831470e+01
+   &EEMBED [&Type "Double"]       0.0000000000000000e+00
+   &FINALEN [&Type "Double"]      -6.9905097882504856e+02  "No Van der Waals correction"
+$End
+$Solvation_Details
+   &GeometryIndex 19
+   &ListStatus       OUT
+   &SOLVENT [&Type "String"] "WATER"
+   &EPSILON [&Type "Double"]       8.0150999999999996e+01
+   &REFRAC [&Type "Double"]       1.3328000000000000e+00
+   &RSOLV [&Type "Double"]       1.3000000000000000e+00
+   &SURFACETYPE [&Type "String"] "GAUSSIAN VDW"
+   &NPOINTS [&Type "Integer"] 840
+   &SURFACEAREA [&Type "Double"]       4.8281896985399999e+02
+   &CPCMDIELENERGY [&Type "Double"]      -5.1831703000000000e-02
+$End
+$VdW_Correction
+   &GeometryIndex 19
+   &ListStatus       OUT
+   &VDW [&Type "Double"]      -7.7851675279555603e-03
+$End
+$SCF_Nuc_Gradient
+   &GeometryIndex 19
+   &ListStatus       OUT
+   &NATOMS [&Type "Integer"] 6
+   &ROOT [&Type "Integer"] 0
+   &GRADNORM [&Type "Double"]       7.5887829280778659e-03
+   &GRAD [&Type "ArrayOfDoubles", &Dim (18,1)] 
+                                                         0
+
+0                                     -4.2565190720929118e-04
+1                                      2.7240837019134809e-04
+2                                      3.7441028136702987e-04
+3                                      1.1204110933850792e-03
+4                                      1.8372529776833624e-03
+5                                     -6.1091883339489672e-04
+6                                     -1.3652781974396178e-03
+7                                      1.0138776541879918e-03
+8                                      2.8105427821398486e-03
+9                                      1.8432886181213581e-03
+10                                    -3.8537583751395987e-03
+11                                    -2.8098814752221812e-03
+12                                    -2.0872116502396731e-03
+13                                     1.1372978329327738e-03
+14                                     2.1885158689629106e-03
+15                                     9.1444207174662395e-04
+16                                    -4.0707849841207719e-04
+17                                    -1.9526686046666963e-03
+$End
+$Geometry
+   &GeometryIndex 20
+   &ListStatus       OUT
+   &NATOMS [&Type "Integer"] 6
+   &NCORELESSECP [&Type "Integer"] 0
+   &NGHOSTATOMS [&Type "Integer"] 0
+   &CartesianCoordinates [&Type "Coordinates", &Dim(6,4), &Units "Bohr"] 
+              Li    -6.723719478061    5.650879645561   -3.254647574145
+              F     -3.313880704322   11.068631444917   -1.418590255010
+              O     -1.750891141126    7.101504911485    0.421021627097
+              P     -4.659310442839    8.561120020187   -0.337484620283
+              F     -7.103770458046   10.310806173093    0.722986082648
+              O     -3.586791873022    8.028015782191    2.452372037549
+$End
+$SCF_Energy
+   &GeometryIndex 20
+   &ListStatus       OUT
+   &SCF_ENERGY [&Type "Double"]      -6.9905107620163051e+02
+$End
+$DFT_Energy
+   &GeometryIndex 20
+   &ListStatus       OUT
+   &NALPHAEL [&Type "Integer"] 26
+   &NBETAEL [&Type "Integer"] 26
+   &NTOTALEL [&Type "Integer"] 52
+   &EEXCHANGE [&Type "Double"]      -4.8662567173960724e+01
+   &ECORR [&Type "Double"]      -2.3277382778292344e+00
+   &ECNL [&Type "Double"]       0.0000000000000000e+00
+   &EXC [&Type "Double"]      -5.0990305451789958e+01
+   &EEMBED [&Type "Double"]       0.0000000000000000e+00
+   &FINALEN [&Type "Double"]      -6.9905107620163051e+02  "No Van der Waals correction"
+$End
+$Solvation_Details
+   &GeometryIndex 20
+   &ListStatus       OUT
+   &SOLVENT [&Type "String"] "WATER"
+   &EPSILON [&Type "Double"]       8.0150999999999996e+01
+   &REFRAC [&Type "Double"]       1.3328000000000000e+00
+   &RSOLV [&Type "Double"]       1.3000000000000000e+00
+   &SURFACETYPE [&Type "String"] "GAUSSIAN VDW"
+   &NPOINTS [&Type "Integer"] 840
+   &SURFACEAREA [&Type "Double"]       4.8279779358000002e+02
+   &CPCMDIELENERGY [&Type "Double"]      -5.1822028999999999e-02
+$End
+$VdW_Correction
+   &GeometryIndex 20
+   &ListStatus       OUT
+   &VDW [&Type "Double"]      -7.7887339979186999e-03
+$End
+$SCF_Nuc_Gradient
+   &GeometryIndex 20
+   &ListStatus       OUT
+   &NATOMS [&Type "Integer"] 6
+   &ROOT [&Type "Integer"] 0
+   &GRADNORM [&Type "Double"]       6.2412651064143749e-03
+   &GRAD [&Type "ArrayOfDoubles", &Dim (18,1)] 
+                                                         0
+
+0                                     -3.6976203303445282e-04
+1                                      1.8769975437874127e-04
+2                                      6.6025221744673776e-06
+3                                      8.6911867261925402e-04
+4                                      1.1055408945924994e-03
+5                                     -1.9517212561395714e-04
+6                                     -1.3035623036270483e-03
+7                                      1.1212528992740473e-03
+8                                      1.5162275909772829e-03
+9                                      2.1419433783591291e-03
+10                                    -3.8405142395958880e-03
+11                                    -3.7550395470262177e-04
+12                                    -1.2589625810761063e-03
+13                                     9.2519773313988474e-04
+14                                     1.6311133915439396e-03
+15                                    -7.8775070969788752e-05
+16                                     5.0082295541817312e-04
+17                                    -2.5832674044121151e-03
+$End
+$Geometry
+   &GeometryIndex 21
+   &ListStatus       OUT
+   &NATOMS [&Type "Integer"] 6
+   &NCORELESSECP [&Type "Integer"] 0
+   &NGHOSTATOMS [&Type "Integer"] 0
+   &CartesianCoordinates [&Type "Coordinates", &Dim(6,4), &Units "Bohr"] 
+              Li    -6.679618304290    5.645009077568   -3.269968996613
+              F     -3.328011749016   11.049555670457   -1.436103246799
+              O     -1.774556342706    7.090255712109    0.400317571325
+              P     -4.684041801241    8.566036281277   -0.317285345229
+              F     -7.092836264670   10.339633128193    0.746424870336
+              O     -3.579299635494    8.030468107829    2.462272444836
+$End
+$SCF_Energy
+   &GeometryIndex 21
+   &ListStatus       OUT
+   &SCF_ENERGY [&Type "Double"]      -6.9905113780461772e+02
+$End
+$DFT_Energy
+   &GeometryIndex 21
+   &ListStatus       OUT
+   &NALPHAEL [&Type "Integer"] 26
+   &NBETAEL [&Type "Integer"] 26
+   &NTOTALEL [&Type "Integer"] 52
+   &EEXCHANGE [&Type "Double"]      -4.8663240110479734e+01
+   &ECORR [&Type "Double"]      -2.3278195780317441e+00
+   &ECNL [&Type "Double"]       0.0000000000000000e+00
+   &EXC [&Type "Double"]      -5.0991059688511477e+01
+   &EEMBED [&Type "Double"]       0.0000000000000000e+00
+   &FINALEN [&Type "Double"]      -6.9905113780461772e+02  "No Van der Waals correction"
+$End
+$Solvation_Details
+   &GeometryIndex 21
+   &ListStatus       OUT
+   &SOLVENT [&Type "String"] "WATER"
+   &EPSILON [&Type "Double"]       8.0150999999999996e+01
+   &REFRAC [&Type "Double"]       1.3328000000000000e+00
+   &RSOLV [&Type "Double"]       1.3000000000000000e+00
+   &SURFACETYPE [&Type "String"] "GAUSSIAN VDW"
+   &NPOINTS [&Type "Integer"] 839
+   &SURFACEAREA [&Type "Double"]       4.8288494876900000e+02
+   &CPCMDIELENERGY [&Type "Double"]      -5.1501031000000003e-02
+$End
+$VdW_Correction
+   &GeometryIndex 21
+   &ListStatus       OUT
+   &VDW [&Type "Double"]      -7.7946278158767170e-03
+$End
+$SCF_Nuc_Gradient
+   &GeometryIndex 21
+   &ListStatus       OUT
+   &NATOMS [&Type "Integer"] 6
+   &ROOT [&Type "Integer"] 0
+   &GRADNORM [&Type "Double"]       3.6183048284472172e-03
+   &GRAD [&Type "ArrayOfDoubles", &Dim (18,1)] 
+                                                         0
+
+0                                     -2.2875061860424314e-04
+1                                      1.9008640308219339e-04
+2                                     -2.4636254189420483e-04
+3                                      5.6252313047068514e-04
+4                                      7.5713012604727847e-05
+5                                     -2.1315582745165540e-04
+6                                     -9.6767258227101194e-04
+7                                      1.1471974492213433e-03
+8                                     -1.9534376140634482e-04
+9                                      1.5155233842039928e-03
+10                                    -2.2120700331562659e-03
+11                                     1.0351668498407574e-03
+12                                    -2.9148177537727249e-04
+13                                     2.8449087543119811e-04
+14                                     5.7530642797565257e-04
+15                                    -5.9014150011531957e-04
+16                                     5.1458230294932489e-04
+17                                    -9.5561113007069931e-04
+$End
+$Geometry
+   &GeometryIndex 22
+   &ListStatus       OUT
+   &NATOMS [&Type "Integer"] 6
+   &NCORELESSECP [&Type "Integer"] 0
+   &NGHOSTATOMS [&Type "Integer"] 0
+   &CartesianCoordinates [&Type "Coordinates", &Dim(6,4), &Units "Bohr"] 
+              Li    -6.669859611560    5.644068364716   -3.267311441936
+              F     -3.329759598983   11.048818467089   -1.437329924620
+              O     -1.778728381695    7.085358476638    0.394150103165
+              P     -4.689181568212    8.569773499282   -0.314843563078
+              F     -7.093265072211   10.344796159087    0.747314302099
+              O     -3.577569864757    8.028143010622    2.463677822226
+$End
+$SCF_Energy
+   &GeometryIndex 22
+   &ListStatus       OUT
+   &SCF_ENERGY [&Type "Double"]      -6.9905115090720028e+02
+$End
+$DFT_Energy
+   &GeometryIndex 22
+   &ListStatus       OUT
+   &NALPHAEL [&Type "Integer"] 26
+   &NBETAEL [&Type "Integer"] 26
+   &NTOTALEL [&Type "Integer"] 52
+   &EEXCHANGE [&Type "Double"]      -4.8662608453381210e+01
+   &ECORR [&Type "Double"]      -2.3277770591403875e+00
+   &ECNL [&Type "Double"]       0.0000000000000000e+00
+   &EXC [&Type "Double"]      -5.0990385512521598e+01
+   &EEMBED [&Type "Double"]       0.0000000000000000e+00
+   &FINALEN [&Type "Double"]      -6.9905115090720028e+02  "No Van der Waals correction"
+$End
+$Solvation_Details
+   &GeometryIndex 22
+   &ListStatus       OUT
+   &SOLVENT [&Type "String"] "WATER"
+   &EPSILON [&Type "Double"]       8.0150999999999996e+01
+   &REFRAC [&Type "Double"]       1.3328000000000000e+00
+   &RSOLV [&Type "Double"]       1.3000000000000000e+00
+   &SURFACETYPE [&Type "String"] "GAUSSIAN VDW"
+   &NPOINTS [&Type "Integer"] 838
+   &SURFACEAREA [&Type "Double"]       4.8292800935999998e+02
+   &CPCMDIELENERGY [&Type "Double"]      -5.1360804000000003e-02
+$End
+$VdW_Correction
+   &GeometryIndex 22
+   &ListStatus       OUT
+   &VDW [&Type "Double"]      -7.7959245994762665e-03
+$End
+$SCF_Nuc_Gradient
+   &GeometryIndex 22
+   &ListStatus       OUT
+   &NATOMS [&Type "Integer"] 6
+   &ROOT [&Type "Integer"] 0
+   &GRADNORM [&Type "Double"]       2.4109857071331628e-03
+   &GRAD [&Type "ArrayOfDoubles", &Dim (18,1)] 
+                                                         0
+
+0                                     -1.7157962891452185e-04
+1                                      2.5290898026016344e-04
+2                                     -2.0589663657013396e-04
+3                                      4.7313344749544406e-04
+4                                     -1.2309927250425678e-04
+5                                     -3.0006949015826123e-04
+6                                     -5.1148682215507169e-04
+7                                      8.2987599580680582e-04
+8                                     -6.7142522420634773e-04
+9                                      9.5940351894205356e-04
+10                                    -1.3833015688304862e-03
+11                                     7.6752406446659038e-04
+12                                    -2.4229937261338597e-04
+13                                     8.1726359482531263e-05
+14                                     2.1747746438945809e-04
+15                                    -5.0717109196141835e-04
+16                                     3.4188952220410088e-04
+17                                     1.9238983894309669e-04
+$End
+$Geometry
+   &GeometryIndex 23
+   &ListStatus       OUT
+   &NATOMS [&Type "Integer"] 6
+   &NCORELESSECP [&Type "Integer"] 0
+   &NGHOSTATOMS [&Type "Integer"] 0
+   &CartesianCoordinates [&Type "Coordinates", &Dim(6,4), &Units "Bohr"] 
+              Li    -6.655890537387    5.639325009788   -3.262287135738
+              F     -3.331645067435   11.051694149804   -1.437453445936
+              O     -1.784921886708    7.076051403987    0.386922462772
+              P     -4.696036841740    8.576720617554   -0.313857548519
+              F     -7.093688316970   10.352979207679    0.750285300753
+              O     -3.576181447177    8.024187588623    2.462047664524
+$End
+$SCF_Energy
+   &GeometryIndex 23
+   &ListStatus       OUT
+   &SCF_ENERGY [&Type "Double"]      -6.9905116611089272e+02
+$End
+$DFT_Energy
+   &GeometryIndex 23
+   &ListStatus       OUT
+   &NALPHAEL [&Type "Integer"] 26
+   &NBETAEL [&Type "Integer"] 26
+   &NTOTALEL [&Type "Integer"] 52
+   &EEXCHANGE [&Type "Double"]      -4.8661813165418593e+01
+   &ECORR [&Type "Double"]      -2.3277158225937420e+00
+   &ECNL [&Type "Double"]       0.0000000000000000e+00
+   &EXC [&Type "Double"]      -5.0989528988012339e+01
+   &EEMBED [&Type "Double"]       0.0000000000000000e+00
+   &FINALEN [&Type "Double"]      -6.9905116611089272e+02  "No Van der Waals correction"
+$End
+$Solvation_Details
+   &GeometryIndex 23
+   &ListStatus       OUT
+   &SOLVENT [&Type "String"] "WATER"
+   &EPSILON [&Type "Double"]       8.0150999999999996e+01
+   &REFRAC [&Type "Double"]       1.3328000000000000e+00
+   &RSOLV [&Type "Double"]       1.3000000000000000e+00
+   &SURFACETYPE [&Type "String"] "GAUSSIAN VDW"
+   &NPOINTS [&Type "Integer"] 838
+   &SURFACEAREA [&Type "Double"]       4.8312605612800002e+02
+   &CPCMDIELENERGY [&Type "Double"]      -5.1226617000000002e-02
+$End
+$VdW_Correction
+   &GeometryIndex 23
+   &ListStatus       OUT
+   &VDW [&Type "Double"]      -7.7967768865600277e-03
+$End
+$SCF_Nuc_Gradient
+   &GeometryIndex 23
+   &ListStatus       OUT
+   &NATOMS [&Type "Integer"] 6
+   &ROOT [&Type "Integer"] 0
+   &GRADNORM [&Type "Double"]       1.7698315003461451e-03
+   &GRAD [&Type "ArrayOfDoubles", &Dim (18,1)] 
+                                                         0
+
+0                                     -1.1382170174014522e-04
+1                                      3.0706001833289386e-04
+2                                     -1.4445007618573737e-04
+3                                      3.2593336873536216e-04
+4                                     -1.1716194633834554e-04
+5                                     -4.7323509025851140e-04
+6                                     -6.5350905419314653e-05
+7                                      3.5718488202796106e-04
+8                                     -7.7738251551060997e-04
+9                                      2.7527521610021255e-04
+10                                    -4.6933406852378567e-04
+11                                     2.8981898422103525e-04
+12                                    -2.3552790230596532e-04
+13                                    -1.0698721406493528e-04
+14                                    -9.1858808456302121e-05
+15                                    -1.8650800056246170e-04
+16                                     2.9238299474907553e-05
+17                                     1.1971075244625040e-03
+$End
+$Geometry
+   &GeometryIndex 24
+   &ListStatus       OUT
+   &NATOMS [&Type "Integer"] 6
+   &NCORELESSECP [&Type "Integer"] 0
+   &NGHOSTATOMS [&Type "Integer"] 0
+   &CartesianCoordinates [&Type "Coordinates", &Dim(6,4), &Units "Bohr"] 
+              Li    -6.639101509176    5.628639286184   -3.254833160600
+              F     -3.332635497347   11.058768052617   -1.433786577717
+              O     -1.792993428212    7.063657199235    0.378029726392
+              P     -4.703939298990    8.586440133455   -0.314696660538
+              F     -7.093394810482   10.364527457314    0.755121513213
+              O     -3.576299553210    8.018925848629    2.455822457107
+$End
+$SCF_Energy
+   &GeometryIndex 24
+   &ListStatus       OUT
+   &SCF_ENERGY [&Type "Double"]      -6.9905118227737989e+02
+$End
+$DFT_Energy
+   &GeometryIndex 24
+   &ListStatus       OUT
+   &NALPHAEL [&Type "Integer"] 26
+   &NBETAEL [&Type "Integer"] 26
+   &NTOTALEL [&Type "Integer"] 52
+   &EEXCHANGE [&Type "Double"]      -4.8661331227772067e+01
+   &ECORR [&Type "Double"]      -2.3276725790676425e+00
+   &ECNL [&Type "Double"]       0.0000000000000000e+00
+   &EXC [&Type "Double"]      -5.0989003806839712e+01
+   &EEMBED [&Type "Double"]       0.0000000000000000e+00
+   &FINALEN [&Type "Double"]      -6.9905118227737989e+02  "No Van der Waals correction"
+$End
+$Solvation_Details
+   &GeometryIndex 24
+   &ListStatus       OUT
+   &SOLVENT [&Type "String"] "WATER"
+   &EPSILON [&Type "Double"]       8.0150999999999996e+01
+   &REFRAC [&Type "Double"]       1.3328000000000000e+00
+   &RSOLV [&Type "Double"]       1.3000000000000000e+00
+   &SURFACETYPE [&Type "String"] "GAUSSIAN VDW"
+   &NPOINTS [&Type "Integer"] 839
+   &SURFACEAREA [&Type "Double"]       4.8345059137200002e+02
+   &CPCMDIELENERGY [&Type "Double"]      -5.1121970000000003e-02
+$End
+$VdW_Correction
+   &GeometryIndex 24
+   &ListStatus       OUT
+   &VDW [&Type "Double"]      -7.7974715078401331e-03
+$End
+$SCF_Nuc_Gradient
+   &GeometryIndex 24
+   &ListStatus       OUT
+   &NATOMS [&Type "Integer"] 6
+   &ROOT [&Type "Integer"] 0
+   &GRADNORM [&Type "Double"]       1.8538269400049665e-03
+   &GRAD [&Type "ArrayOfDoubles", &Dim (18,1)] 
+                                                         0
+
+0                                     -8.4776469765867647e-05
+1                                      3.0155808972384332e-04
+2                                     -9.5547868498848873e-05
+3                                      1.0976964640987963e-04
+4                                      2.7532437473526405e-05
+5                                     -5.7581116805537069e-04
+6                                      2.2859980711056882e-04
+7                                     -1.0471775272617723e-04
+8                                     -5.4820424575165519e-04
+9                                     -2.0533296933653022e-04
+10                                     2.4091361063466321e-04
+11                                     3.9551198648013486e-05
+12                                    -1.9429068985149511e-04
+13                                    -2.1679183769750254e-04
+14                                    -3.1980201798254004e-04
+15                                     1.4603075813077182e-04
+16                                    -2.4849456940983020e-04
+17                                     1.4998141152328115e-03
+$End
+$Geometry
+   &GeometryIndex 25
+   &ListStatus       OUT
+   &NATOMS [&Type "Integer"] 6
+   &NCORELESSECP [&Type "Integer"] 0
+   &NGHOSTATOMS [&Type "Integer"] 0
+   &CartesianCoordinates [&Type "Coordinates", &Dim(6,4), &Units "Bohr"] 
+              Li    -6.617312023685    5.609964436724   -3.244527119898
+              F     -3.332323936993   11.069757626542   -1.425536124283
+              O     -1.804504196849    7.048813284689    0.365523739234
+              P     -4.713905118180    8.599342768682   -0.317388774256
+              F     -7.091193546090   10.381441119391    0.763378046025
+              O     -3.579125275620    8.011638741406    2.444207531035
+$End
+$SCF_Energy
+   &GeometryIndex 25
+   &ListStatus       OUT
+   &SCF_ENERGY [&Type "Double"]      -6.9905119856510464e+02
+$End
+$DFT_Energy
+   &GeometryIndex 25
+   &ListStatus       OUT
+   &NALPHAEL [&Type "Integer"] 26
+   &NBETAEL [&Type "Integer"] 26
+   &NTOTALEL [&Type "Integer"] 52
+   &EEXCHANGE [&Type "Double"]      -4.8661394629456055e+01
+   &ECORR [&Type "Double"]      -2.3276699457774517e+00
+   &ECNL [&Type "Double"]       0.0000000000000000e+00
+   &EXC [&Type "Double"]      -5.0989064575233506e+01
+   &EEMBED [&Type "Double"]       0.0000000000000000e+00
+   &FINALEN [&Type "Double"]      -6.9905119856510464e+02  "No Van der Waals correction"
+$End
+$Solvation_Details
+   &GeometryIndex 25
+   &ListStatus       OUT
+   &SOLVENT [&Type "String"] "WATER"
+   &EPSILON [&Type "Double"]       8.0150999999999996e+01
+   &REFRAC [&Type "Double"]       1.3328000000000000e+00
+   &RSOLV [&Type "Double"]       1.3000000000000000e+00
+   &SURFACETYPE [&Type "String"] "GAUSSIAN VDW"
+   &NPOINTS [&Type "Integer"] 839
+   &SURFACEAREA [&Type "Double"]       4.8386771809900000e+02
+   &CPCMDIELENERGY [&Type "Double"]      -5.1038094999999999e-02
+$End
+$VdW_Correction
+   &GeometryIndex 25
+   &ListStatus       OUT
+   &VDW [&Type "Double"]      -7.7986990203750420e-03
+$End
+$SCF_Nuc_Gradient
+   &GeometryIndex 25
+   &ListStatus       OUT
+   &NATOMS [&Type "Integer"] 6
+   &ROOT [&Type "Integer"] 0
+   &GRADNORM [&Type "Double"]       1.6594039988892762e-03
+   &GRAD [&Type "ArrayOfDoubles", &Dim (18,1)] 
+                                                         0
+
+0                                     -8.3103990755695537e-05
+1                                      2.1962011721959364e-04
+2                                     -6.8715760200686697e-05
+3                                     -1.5941612201440802e-04
+4                                      2.0556539205002222e-04
+5                                     -5.1691039917907411e-04
+6                                      3.0350298667561337e-04
+7                                     -4.2708686589854050e-04
+8                                     -7.2373381812634169e-05
+9                                     -3.8891496681367488e-04
+10                                     6.4710968404185776e-04
+11                                     1.3490379814815046e-04
+12                                    -3.8342497031412792e-05
+13                                    -2.4427478170871431e-04
+14                                    -4.4487756361877295e-04
+15                                     3.6627460365622200e-04
+16                                    -4.0093356752966477e-04
+17                                     9.6797332210435405e-04
+$End
+$Geometry
+   &GeometryIndex 26
+   &ListStatus       OUT
+   &NATOMS [&Type "Integer"] 6
+   &NCORELESSECP [&Type "Integer"] 0
+   &NGHOSTATOMS [&Type "Integer"] 0
+   &CartesianCoordinates [&Type "Coordinates", &Dim(6,4), &Units "Bohr"] 
+              Li    -6.599552813182    5.591665100686   -3.235629617504
+              F     -3.330328856329   11.078841175843   -1.416424233108
+              O     -1.814805175628    7.039273209721    0.353839437197
+              P     -4.721880995057    8.609484708275   -0.320827161910
+              F     -7.087890065001   10.396500964548    0.771705049009
+              O     -3.583906192220    8.005192818360    2.432993824173
+$End
+$SCF_Energy
+   &GeometryIndex 26
+   &ListStatus       OUT
+   &SCF_ENERGY [&Type "Double"]      -6.9905120764155993e+02
+$End
+$DFT_Energy
+   &GeometryIndex 26
+   &ListStatus       OUT
+   &NALPHAEL [&Type "Integer"] 26
+   &NBETAEL [&Type "Integer"] 26
+   &NTOTALEL [&Type "Integer"] 52
+   &EEXCHANGE [&Type "Double"]      -4.8661879848347226e+01
+   &ECORR [&Type "Double"]      -2.3277069678762494e+00
+   &ECNL [&Type "Double"]       0.0000000000000000e+00
+   &EXC [&Type "Double"]      -5.0989586816223479e+01
+   &EEMBED [&Type "Double"]       0.0000000000000000e+00
+   &FINALEN [&Type "Double"]      -6.9905120764155993e+02  "No Van der Waals correction"
+$End
+$Solvation_Details
+   &GeometryIndex 26
+   &ListStatus       OUT
+   &SOLVENT [&Type "String"] "WATER"
+   &EPSILON [&Type "Double"]       8.0150999999999996e+01
+   &REFRAC [&Type "Double"]       1.3328000000000000e+00
+   &RSOLV [&Type "Double"]       1.3000000000000000e+00
+   &SURFACETYPE [&Type "String"] "GAUSSIAN VDW"
+   &NPOINTS [&Type "Integer"] 839
+   &SURFACEAREA [&Type "Double"]       4.8414075207799999e+02
+   &CPCMDIELENERGY [&Type "Double"]      -5.1004191999999997e-02
+$End
+$VdW_Correction
+   &GeometryIndex 26
+   &ListStatus       OUT
+   &VDW [&Type "Double"]      -7.8003824391958418e-03
+$End
+$SCF_Nuc_Gradient
+   &GeometryIndex 26
+   &ListStatus       OUT
+   &NATOMS [&Type "Integer"] 6
+   &ROOT [&Type "Integer"] 0
+   &GRADNORM [&Type "Double"]       1.2248782589531237e-03
+   &GRAD [&Type "ArrayOfDoubles", &Dim (18,1)] 
+                                                         0
+
+0                                     -9.1691530916335716e-05
+1                                      1.1299339037734030e-04
+2                                     -5.8391129361456094e-05
+3                                     -3.0802318405238893e-04
+4                                      2.3017608944739254e-04
+5                                     -2.8571437585062087e-04
+6                                      1.9875039942793271e-04
+7                                     -4.2357015470706472e-04
+8                                      2.8335706711550904e-04
+9                                     -2.7200703192978293e-04
+10                                     5.7493531865565606e-04
+11                                     3.5880068580543267e-04
+12                                     1.5081518242399117e-04
+13                                    -1.8095497163005125e-04
+14                                    -3.8539978173573325e-04
+15                                     3.2215622443775710e-04
+16                                    -3.1357968725945554e-04
+17                                     8.7347550855765288e-05
+$End
+$Geometry
+   &GeometryIndex 27
+   &ListStatus       OUT
+   &NATOMS [&Type "Integer"] 6
+   &NCORELESSECP [&Type "Integer"] 0
+   &NGHOSTATOMS [&Type "Integer"] 0
+   &CartesianCoordinates [&Type "Coordinates", &Dim(6,4), &Units "Bohr"] 
+              Li    -6.588598623125    5.579214763803   -3.230013913730
+              F     -3.327759306291   11.083520490617   -1.410053890423
+              O     -1.821788039045    7.036148172592    0.345315225162
+              P     -4.726793838854    8.615054438356   -0.323645264144
+              F     -7.084978679684   10.406394817530    0.777864521628
+              O     -3.588445610418    8.000625294536    2.426190619364
+$End
+$SCF_Energy
+   &GeometryIndex 27
+   &ListStatus       OUT
+   &SCF_ENERGY [&Type "Double"]      -6.9905121106499644e+02
+$End
+$DFT_Energy
+   &GeometryIndex 27
+   &ListStatus       OUT
+   &NALPHAEL [&Type "Integer"] 26
+   &NBETAEL [&Type "Integer"] 26
+   &NTOTALEL [&Type "Integer"] 52
+   &EEXCHANGE [&Type "Double"]      -4.8662247906016752e+01
+   &ECORR [&Type "Double"]      -2.3277429818968409e+00
+   &ECNL [&Type "Double"]       0.0000000000000000e+00
+   &EXC [&Type "Double"]      -5.0989990887913592e+01
+   &EEMBED [&Type "Double"]       0.0000000000000000e+00
+   &FINALEN [&Type "Double"]      -6.9905121106499644e+02  "No Van der Waals correction"
+$End
+$Solvation_Details
+   &GeometryIndex 27
+   &ListStatus       OUT
+   &SOLVENT [&Type "String"] "WATER"
+   &EPSILON [&Type "Double"]       8.0150999999999996e+01
+   &REFRAC [&Type "Double"]       1.3328000000000000e+00
+   &RSOLV [&Type "Double"]       1.3000000000000000e+00
+   &SURFACETYPE [&Type "String"] "GAUSSIAN VDW"
+   &NPOINTS [&Type "Integer"] 840
+   &SURFACEAREA [&Type "Double"]       4.8423850237699997e+02
+   &CPCMDIELENERGY [&Type "Double"]      -5.1002712999999998e-02
+$End
+$VdW_Correction
+   &GeometryIndex 27
+   &ListStatus       OUT
+   &VDW [&Type "Double"]      -7.8020256502031437e-03
+$End
+$SCF_Nuc_Gradient
+   &GeometryIndex 27
+   &ListStatus       OUT
+   &NATOMS [&Type "Integer"] 6
+   &ROOT [&Type "Integer"] 0
+   &GRADNORM [&Type "Double"]       9.6763135505082299e-04
+   &GRAD [&Type "ArrayOfDoubles", &Dim (18,1)] 
+                                                         0
+
+0                                     -8.5100550114171510e-05
+1                                      4.0966836154831057e-05
+2                                     -4.4165578088328598e-05
+3                                     -2.8062700991098033e-04
+4                                      1.2929117220505937e-04
+5                                     -4.7344407499691488e-05
+6                                      9.9271664942474080e-05
+7                                     -2.3594302416728163e-04
+8                                      3.5864343633984497e-04
+9                                     -1.9060967767500769e-04
+10                                     3.1143951562512262e-04
+11                                     3.7322909020948147e-04
+12                                     2.8487676011412777e-04
+13                                    -1.0520604270643219e-04
+14                                    -2.3563389336479779e-04
+15                                     1.7218889069190585e-04
+16                                    -1.4054851029480370e-04
+17                                    -4.0472863011270510e-04
+$End
+$Geometry
+   &GeometryIndex 28
+   &ListStatus       OUT
+   &NATOMS [&Type "Integer"] 6
+   &NCORELESSECP [&Type "Integer"] 0
+   &NGHOSTATOMS [&Type "Integer"] 0
+   &CartesianCoordinates [&Type "Coordinates", &Dim(6,4), &Units "Bohr"] 
+              Li    -6.584385281971    5.573741456904   -3.227400062681
+              F     -3.325586132693   11.084749282157   -1.406969600079
+              O     -1.824919591115    7.036844051147    0.340793584285
+              P     -4.728639531169    8.616820655163   -0.325388571408
+              F     -7.083692614697   10.410536697338    0.780625787458
+              O     -3.591140945772    7.998265834725    2.423996160281
+$End
+$SCF_Energy
+   &GeometryIndex 28
+   &ListStatus       OUT
+   &SCF_ENERGY [&Type "Double"]      -6.9905121210429490e+02
+$End
+$DFT_Energy
+   &GeometryIndex 28
+   &ListStatus       OUT
+   &NALPHAEL [&Type "Integer"] 26
+   &NBETAEL [&Type "Integer"] 26
+   &NTOTALEL [&Type "Integer"] 52
+   &EEXCHANGE [&Type "Double"]      -4.8662439724336949e+01
+   &ECORR [&Type "Double"]      -2.3277579200068450e+00
+   &ECNL [&Type "Double"]       0.0000000000000000e+00
+   &EXC [&Type "Double"]      -5.0990197644343795e+01
+   &EEMBED [&Type "Double"]       0.0000000000000000e+00
+   &FINALEN [&Type "Double"]      -6.9905121210429490e+02  "No Van der Waals correction"
+$End
+$Solvation_Details
+   &GeometryIndex 28
+   &ListStatus       OUT
+   &SOLVENT [&Type "String"] "WATER"
+   &EPSILON [&Type "Double"]       8.0150999999999996e+01
+   &REFRAC [&Type "Double"]       1.3328000000000000e+00
+   &RSOLV [&Type "Double"]       1.3000000000000000e+00
+   &SURFACETYPE [&Type "String"] "GAUSSIAN VDW"
+   &NPOINTS [&Type "Integer"] 839
+   &SURFACEAREA [&Type "Double"]       4.8423642404600002e+02
+   &CPCMDIELENERGY [&Type "Double"]      -5.1016694000000001e-02
+$End
+$VdW_Correction
+   &GeometryIndex 28
+   &ListStatus       OUT
+   &VDW [&Type "Double"]      -7.8030624062390818e-03
+$End
+$SCF_Nuc_Gradient
+   &GeometryIndex 28
+   &ListStatus       OUT
+   &NATOMS [&Type "Integer"] 6
+   &ROOT [&Type "Integer"] 0
+   &GRADNORM [&Type "Double"]       6.1322261213647244e-04
+   &GRAD [&Type "ArrayOfDoubles", &Dim (18,1)] 
+                                                         0
+
+0                                     -6.9490441644356679e-05
+1                                      1.9519468922205713e-05
+2                                     -2.3046524179950838e-05
+3                                     -1.7686733008563660e-04
+4                                     -8.4473776957028068e-06
+5                                      1.0728651903213482e-04
+6                                      9.0313055713608925e-05
+7                                     -6.3899569412800838e-05
+8                                      2.3498745707270161e-04
+9                                     -1.6456094298428203e-04
+10                                     7.5753420921836900e-05
+11                                     1.2113960585477535e-04
+12                                     2.6606043333546325e-04
+13                                    -1.3381346353133483e-05
+14                                    -7.6152919608246661e-05
+15                                     5.4545270961402215e-05
+16                                    -9.5446189847456231e-06
+17                                    -3.6421412089288063e-04
+$End
+$Geometry
+   &GeometryIndex 29
+   &ListStatus       OUT
+   &NATOMS [&Type "Integer"] 6
+   &NCORELESSECP [&Type "Integer"] 0
+   &NGHOSTATOMS [&Type "Integer"] 0
+   &CartesianCoordinates [&Type "Coordinates", &Dim(6,4), &Units "Bohr"] 
+              Li    -6.582144954510    5.572254225123   -3.226608961759
+              F     -3.324780801764   11.084467079266   -1.406579810378
+              O     -1.826608062384    7.037421069635    0.338614597745
+              P     -4.729606325004    8.617278050982   -0.325750069588
+              F     -7.083289987941   10.412204557600    0.781922978182
+              O     -3.591933965814    7.997332994828    2.424058563653
+$End
+$SCF_Energy
+   &GeometryIndex 29
+   &ListStatus       OUT
+   &SCF_ENERGY [&Type "Double"]      -6.9905121213197594e+02
+$End
+$DFT_Energy
+   &GeometryIndex 29
+   &ListStatus       OUT
+   &NALPHAEL [&Type "Integer"] 26
+   &NBETAEL [&Type "Integer"] 26
+   &NTOTALEL [&Type "Integer"] 52
+   &EEXCHANGE [&Type "Double"]      -4.8662342005869931e+01
+   &ECORR [&Type "Double"]      -2.3277549775621127e+00
+   &ECNL [&Type "Double"]       0.0000000000000000e+00
+   &EXC [&Type "Double"]      -5.0990096983432046e+01
+   &EEMBED [&Type "Double"]       0.0000000000000000e+00
+   &FINALEN [&Type "Double"]      -6.9905121213197594e+02  "No Van der Waals correction"
+$End
+$Solvation_Details
+   &GeometryIndex 29
+   &ListStatus       OUT
+   &SOLVENT [&Type "String"] "WATER"
+   &EPSILON [&Type "Double"]       8.0150999999999996e+01
+   &REFRAC [&Type "Double"]       1.3328000000000000e+00
+   &RSOLV [&Type "Double"]       1.3000000000000000e+00
+   &SURFACETYPE [&Type "String"] "GAUSSIAN VDW"
+   &NPOINTS [&Type "Integer"] 839
+   &SURFACEAREA [&Type "Double"]       4.8422190518299999e+02
+   &CPCMDIELENERGY [&Type "Double"]      -5.1011790000000001e-02
+$End
+$VdW_Correction
+   &GeometryIndex 29
+   &ListStatus       OUT
+   &VDW [&Type "Double"]      -7.8036179830075162e-03
+$End
+$SCF_Nuc_Gradient
+   &GeometryIndex 29
+   &ListStatus       OUT
+   &NATOMS [&Type "Integer"] 6
+   &ROOT [&Type "Integer"] 0
+   &GRADNORM [&Type "Double"]       4.6682719765719341e-04
+   &GRAD [&Type "ArrayOfDoubles", &Dim (18,1)] 
+                                                         0
+
+0                                     -4.9771426958906267e-05
+1                                      2.6395874025465088e-05
+2                                     -8.2258321574737309e-06
+3                                     -9.0487219105553351e-05
+4                                     -8.4201965046076799e-05
+5                                      1.4012808517538389e-04
+6                                      1.1561950836441737e-04
+7                                      7.2414172481854999e-06
+8                                      1.0446250688542907e-04
+9                                     -2.6192643343903033e-04
+10                                     4.1428006904320469e-05
+11                                    -1.0547571996291638e-04
+12                                     2.4514577058826204e-04
+13                                    -4.9485316318681472e-06
+14                                    -2.4263491116241487e-05
+15                                     4.1419847493825990e-05
+16                                     1.4085209516012664e-05
+17                                    -1.0662553345502923e-04
+$End
+$Geometry
+   &GeometryIndex 30
+   &ListStatus       OUT
+   &NATOMS [&Type "Integer"] 6
+   &NCORELESSECP [&Type "Integer"] 0
+   &NGHOSTATOMS [&Type "Integer"] 0
+   &CartesianCoordinates [&Type "Coordinates", &Dim(6,4), &Units "Bohr"] 
+              Li    -6.581857070251    5.572383635378   -3.226262053402
+              F     -3.324467530518   11.084355654639   -1.406607663163
+              O     -1.826976203808    7.037623980284    0.338027546487
+              P     -4.729552866400    8.617219797253   -0.325837561819
+              F     -7.083584742957   10.412222902365    0.781848632447
+              O     -3.591925683483    7.997152007515    2.424488397305
+$End
+$SCF_Energy
+   &GeometryIndex 30
+   &ListStatus       OUT
+   &SCF_ENERGY [&Type "Double"]      -6.9905121219574323e+02
+$End
+$DFT_Energy
+   &GeometryIndex 30
+   &ListStatus       OUT
+   &NALPHAEL [&Type "Integer"] 26
+   &NBETAEL [&Type "Integer"] 26
+   &NTOTALEL [&Type "Integer"] 52
+   &EEXCHANGE [&Type "Double"]      -4.8662160409502803e+01
+   &ECORR [&Type "Double"]      -2.3277452894672201e+00
+   &ECNL [&Type "Double"]       0.0000000000000000e+00
+   &EXC [&Type "Double"]      -5.0989905698970020e+01
+   &EEMBED [&Type "Double"]       0.0000000000000000e+00
+   &FINALEN [&Type "Double"]      -6.9905121219574323e+02  "No Van der Waals correction"
+$End
+$Solvation_Details
+   &GeometryIndex 30
+   &ListStatus       OUT
+   &SOLVENT [&Type "String"] "WATER"
+   &EPSILON [&Type "Double"]       8.0150999999999996e+01
+   &REFRAC [&Type "Double"]       1.3328000000000000e+00
+   &RSOLV [&Type "Double"]       1.3000000000000000e+00
+   &SURFACETYPE [&Type "String"] "GAUSSIAN VDW"
+   &NPOINTS [&Type "Integer"] 839
+   &SURFACEAREA [&Type "Double"]       4.8421261724800002e+02
+   &CPCMDIELENERGY [&Type "Double"]      -5.1002234000000000e-02
+$End
+$VdW_Correction
+   &GeometryIndex 30
+   &ListStatus       OUT
+   &VDW [&Type "Double"]      -7.8037472090670169e-03
+$End
+$SCF_Nuc_Gradient
+   &GeometryIndex 30
+   &ListStatus       OUT
+   &NATOMS [&Type "Integer"] 6
+   &ROOT [&Type "Integer"] 0
+   &GRADNORM [&Type "Double"]       4.6262079898179719e-04
+   &GRAD [&Type "ArrayOfDoubles", &Dim (18,1)] 
+                                                         0
+
+0                                     -3.9979473814416404e-05
+1                                      3.7443943228708532e-05
+2                                      3.5443065809440816e-06
+3                                     -5.4981858290378827e-05
+4                                     -9.7071565217377032e-05
+5                                      1.2894474955543744e-04
+6                                      1.3060725441424448e-04
+7                                      9.5509782409713972e-06
+8                                      2.4339505580041332e-05
+9                                     -2.7268834077459614e-04
+10                                     3.5173723505504961e-05
+11                                    -2.1325620773884890e-04
+12                                     1.9104990390220178e-04
+13                                     7.8697214274253691e-06
+14                                    -9.1850409159183188e-06
+15                                     4.5992576646940175e-05
+16                                     7.0331783976994300e-06
+17                                     6.5612701651562855e-05
+$End
+$Geometry
+   &GeometryIndex 31
+   &ListStatus       OUT
+   &NATOMS [&Type "Integer"] 6
+   &NCORELESSECP [&Type "Integer"] 0
+   &NGHOSTATOMS [&Type "Integer"] 0
+   &CartesianCoordinates [&Type "Coordinates", &Dim(6,4), &Units "Bohr"] 
+              Li    -6.581229884146    5.572423545933   -3.226119313013
+              F     -3.324385090658   11.084402264534   -1.406843046555
+              O     -1.827584104803    7.037242573048    0.337560025484
+              P     -4.729574602222    8.617323320445   -0.325742926088
+              F     -7.083888937944   10.412375639376    0.782023200430
+              O     -3.591701477644    7.997190634097    2.424779357598
+$End
+$SCF_Energy
+   &GeometryIndex 31
+   &ListStatus       OUT
+   &SCF_ENERGY [&Type "Double"]      -6.9905121226392009e+02
+$End
+$DFT_Energy
+   &GeometryIndex 31
+   &ListStatus       OUT
+   &NALPHAEL [&Type "Integer"] 26
+   &NBETAEL [&Type "Integer"] 26
+   &NTOTALEL [&Type "Integer"] 52
+   &EEXCHANGE [&Type "Double"]      -4.8662120776293627e+01
+   &ECORR [&Type "Double"]      -2.3277388234491898e+00
+   &ECNL [&Type "Double"]       0.0000000000000000e+00
+   &EXC [&Type "Double"]      -5.0989859599742815e+01
+   &EEMBED [&Type "Double"]       0.0000000000000000e+00
+   &FINALEN [&Type "Double"]      -6.9905121226392009e+02  "No Van der Waals correction"
+$End
+$Solvation_Details
+   &GeometryIndex 31
+   &ListStatus       OUT
+   &SOLVENT [&Type "String"] "WATER"
+   &EPSILON [&Type "Double"]       8.0150999999999996e+01
+   &REFRAC [&Type "Double"]       1.3328000000000000e+00
+   &RSOLV [&Type "Double"]       1.3000000000000000e+00
+   &SURFACETYPE [&Type "String"] "GAUSSIAN VDW"
+   &NPOINTS [&Type "Integer"] 839
+   &SURFACEAREA [&Type "Double"]       4.8422001911799998e+02
+   &CPCMDIELENERGY [&Type "Double"]      -5.0992588999999998e-02
+$End
+$VdW_Correction
+   &GeometryIndex 31
+   &ListStatus       OUT
+   &VDW [&Type "Double"]      -7.8037911241762240e-03
+$End
+$SCF_Nuc_Gradient
+   &GeometryIndex 31
+   &ListStatus       OUT
+   &NATOMS [&Type "Integer"] 6
+   &ROOT [&Type "Integer"] 0
+   &GRADNORM [&Type "Double"]       4.7033335980390718e-04
+   &GRAD [&Type "ArrayOfDoubles", &Dim (18,1)] 
+                                                         0
+
+0                                     -3.4176811771078654e-05
+1                                      4.1814532909655033e-05
+2                                      8.0814916747730045e-06
+3                                     -3.5484933070442648e-05
+4                                     -6.8491275187071432e-05
+5                                      9.9869352382264687e-05
+6                                      1.3305928778090115e-04
+7                                      3.8534691014086020e-06
+8                                     -2.8603075036860715e-06
+9                                     -2.5064984371192534e-04
+10                                     1.5104825938999644e-05
+11                                    -2.7055152099747515e-04
+12                                     1.3437874076746570e-04
+13                                     2.0773896186349061e-05
+14                                     1.5388861737825055e-06
+15                                     5.2873634338930497e-05
+16                                    -1.3055509529114745e-05
+17                                     1.6392211532340051e-04
+$End
+$Geometry
+   &GeometryIndex 32
+   &ListStatus       OUT
+   &NATOMS [&Type "Integer"] 6
+   &NCORELESSECP [&Type "Integer"] 0
+   &NGHOSTATOMS [&Type "Integer"] 0
+   &CartesianCoordinates [&Type "Coordinates", &Dim(6,4), &Units "Bohr"] 
+              Li    -6.574055064470    5.570498260883   -3.225776451656
+              F     -3.324623438987   11.084447663828   -1.407732524989
+              O     -1.832878240314    7.033023915399    0.333675644461
+              P     -4.731970451359    8.619083143081   -0.324627825343
+              F     -7.084463729987   10.415882938182    0.785362856037
+              O     -3.590373172299    7.998022056061    2.424755599345
+$End
+$SCF_Energy
+   &GeometryIndex 32
+   &ListStatus       OUT
+   &SCF_ENERGY [&Type "Double"]      -6.9905121154683229e+02
+$End
+$DFT_Energy
+   &GeometryIndex 32
+   &ListStatus       OUT
+   &NALPHAEL [&Type "Integer"] 26
+   &NBETAEL [&Type "Integer"] 26
+   &NTOTALEL [&Type "Integer"] 52
+   &EEXCHANGE [&Type "Double"]      -4.8661899115245220e+01
+   &ECORR [&Type "Double"]      -2.3277197913963823e+00
+   &ECNL [&Type "Double"]       0.0000000000000000e+00
+   &EXC [&Type "Double"]      -5.0989618906641603e+01
+   &EEMBED [&Type "Double"]       0.0000000000000000e+00
+   &FINALEN [&Type "Double"]      -6.9905121154683229e+02  "No Van der Waals correction"
+$End
+$Solvation_Details
+   &GeometryIndex 32
+   &ListStatus       OUT
+   &SOLVENT [&Type "String"] "WATER"
+   &EPSILON [&Type "Double"]       8.0150999999999996e+01
+   &REFRAC [&Type "Double"]       1.3328000000000000e+00
+   &RSOLV [&Type "Double"]       1.3000000000000000e+00
+   &SURFACETYPE [&Type "String"] "GAUSSIAN VDW"
+   &NPOINTS [&Type "Integer"] 839
+   &SURFACEAREA [&Type "Double"]       4.8430718965400001e+02
+   &CPCMDIELENERGY [&Type "Double"]      -5.0927358999999998e-02
+$End
+$VdW_Correction
+   &GeometryIndex 32
+   &ListStatus       OUT
+   &VDW [&Type "Double"]      -7.8043776345387084e-03
+$End
+$SCF_Nuc_Gradient
+   &GeometryIndex 32
+   &ListStatus       OUT
+   &NATOMS [&Type "Integer"] 6
+   &ROOT [&Type "Integer"] 0
+   &GRADNORM [&Type "Double"]       4.7692832305451776e-04
+   &GRAD [&Type "ArrayOfDoubles", &Dim (18,1)] 
+                                                         0
+
+0                                     -3.1937583029493719e-06
+1                                      4.4783573797592402e-05
+2                                     -6.5469360435808227e-07
+3                                      3.2078983910763248e-05
+4                                     -7.1335961116802959e-06
+5                                     -5.0255209032568082e-06
+6                                      5.7825223020058214e-05
+7                                     -5.3394499416825614e-05
+8                                     -1.1461338170564925e-04
+9                                     -1.3096352844588210e-04
+10                                     2.1129598091418345e-05
+11                                    -2.3452841446680583e-04
+12                                    -4.7219797569941768e-05
+13                                     3.0979024779498321e-05
+14                                     9.2170860720997005e-06
+15                                     9.1472936942192662e-05
+16                                    -3.6364083150181720e-05
+17                                     3.4560494073193615e-04
+$End
+$Geometry
+   &GeometryIndex 33
+   &ListStatus       OUT
+   &NATOMS [&Type "Integer"] 6
+   &NCORELESSECP [&Type "Integer"] 0
+   &NGHOSTATOMS [&Type "Integer"] 0
+   &CartesianCoordinates [&Type "Coordinates", &Dim(6,4), &Units "Bohr"] 
+              Li    -6.576769901637    5.570635896358   -3.225258997928
+              F     -3.324327224130   11.085102956179   -1.406991876937
+              O     -1.830893574613    7.034650300194    0.334997491732
+              P     -4.730866080624    8.618780399184   -0.325346847216
+              F     -7.084118851373   10.414697602418    0.784030226938
+              O     -3.591388465039    7.997090823100    2.424227301267
+$End
+$SCF_Energy
+   &GeometryIndex 33
+   &ListStatus       OUT
+   &SCF_ENERGY [&Type "Double"]      -6.9905121210213451e+02
+$End
+$DFT_Energy
+   &GeometryIndex 33
+   &ListStatus       OUT
+   &NALPHAEL [&Type "Integer"] 26
+   &NBETAEL [&Type "Integer"] 26
+   &NTOTALEL [&Type "Integer"] 52
+   &EEXCHANGE [&Type "Double"]      -4.8662028376815258e+01
+   &ECORR [&Type "Double"]      -2.3277315089194284e+00
+   &ECNL [&Type "Double"]       0.0000000000000000e+00
+   &EXC [&Type "Double"]      -5.0989759885734685e+01
+   &EEMBED [&Type "Double"]       0.0000000000000000e+00
+   &FINALEN [&Type "Double"]      -6.9905121210213451e+02  "No Van der Waals correction"
+$End
+$Solvation_Details
+   &GeometryIndex 33
+   &ListStatus       OUT
+   &SOLVENT [&Type "String"] "WATER"
+   &EPSILON [&Type "Double"]       8.0150999999999996e+01
+   &REFRAC [&Type "Double"]       1.3328000000000000e+00
+   &RSOLV [&Type "Double"]       1.3000000000000000e+00
+   &SURFACETYPE [&Type "String"] "GAUSSIAN VDW"
+   &NPOINTS [&Type "Integer"] 839
+   &SURFACEAREA [&Type "Double"]       4.8426840090500002e+02
+   &CPCMDIELENERGY [&Type "Double"]      -5.0944358000000002e-02
+$End
+$VdW_Correction
+   &GeometryIndex 33
+   &ListStatus       OUT
+   &VDW [&Type "Double"]      -7.8042046427216263e-03
+$End
+$SCF_Nuc_Gradient
+   &GeometryIndex 33
+   &ListStatus       OUT
+   &NATOMS [&Type "Integer"] 6
+   &ROOT [&Type "Integer"] 0
+   &GRADNORM [&Type "Double"]       3.0125302499816529e-04
+   &GRAD [&Type "ArrayOfDoubles", &Dim (18,1)] 
+                                                         0
+
+0                                     -1.9551324520292179e-05
+1                                      3.5634895339286751e-05
+2                                      4.9129753106995355e-06
+3                                     -4.1984553102447641e-06
+4                                     -1.7002964472351279e-05
+5                                      2.5054650563668956e-05
+6                                      3.0516714866701822e-05
+7                                     -3.2073288022141377e-05
+8                                     -5.5056174818237519e-05
+9                                     -1.0396964448225465e-04
+10                                     1.0509141306597192e-05
+11                                    -1.7301287457133219e-04
+12                                     2.6209560485407346e-05
+13                                     2.6148858014246601e-05
+14                                     1.0376865320058104e-05
+15                                     7.0993231831295578e-05
+16                                    -2.3216681445184517e-05
+17                                     1.8772457495791484e-04
+$End
+$Geometry
+   &GeometryIndex 34
+   &ListStatus       OUT
+   &NATOMS [&Type "Integer"] 6
+   &NCORELESSECP [&Type "Integer"] 0
+   &NGHOSTATOMS [&Type "Integer"] 0
+   &CartesianCoordinates [&Type "Coordinates", &Dim(6,4), &Units "Bohr"] 
+              Li    -6.579912029950    5.571140239764   -3.224771355983
+              F     -3.323863657202   11.085740999487   -1.406293828502
+              O     -1.828796357661    7.036246284972    0.336446338192
+              P     -4.729443724503    8.618396006779   -0.325968504711
+              F     -7.084186779488   10.413024167165    0.782368294481
+              O     -3.592161548612    7.996410279267    2.423876354379
+$End
+$SCF_Energy
+   &GeometryIndex 34
+   &ListStatus       OUT
+   &SCF_ENERGY [&Type "Double"]      -6.9905121239479843e+02
+$End
+$DFT_Energy
+   &GeometryIndex 34
+   &ListStatus       OUT
+   &NALPHAEL [&Type "Integer"] 26
+   &NBETAEL [&Type "Integer"] 26
+   &NTOTALEL [&Type "Integer"] 52
+   &EEXCHANGE [&Type "Double"]      -4.8662149382517519e+01
+   &ECORR [&Type "Double"]      -2.3277410173593100e+00
+   &ECNL [&Type "Double"]       0.0000000000000000e+00
+   &EXC [&Type "Double"]      -5.0989890399876828e+01
+   &EEMBED [&Type "Double"]       0.0000000000000000e+00
+   &FINALEN [&Type "Double"]      -6.9905121239479843e+02  "No Van der Waals correction"
+$End
+$Solvation_Details
+   &GeometryIndex 34
+   &ListStatus       OUT
+   &SOLVENT [&Type "String"] "WATER"
+   &EPSILON [&Type "Double"]       8.0150999999999996e+01
+   &REFRAC [&Type "Double"]       1.3328000000000000e+00
+   &RSOLV [&Type "Double"]       1.3000000000000000e+00
+   &SURFACETYPE [&Type "String"] "GAUSSIAN VDW"
+   &NPOINTS [&Type "Integer"] 839
+   &SURFACEAREA [&Type "Double"]       4.8423232537700000e+02
+   &CPCMDIELENERGY [&Type "Double"]      -5.0954729999999997e-02
+$End
+$VdW_Correction
+   &GeometryIndex 34
+   &ListStatus       OUT
+   &VDW [&Type "Double"]      -7.8039765060469767e-03
+$End
+$SCF_Nuc_Gradient
+   &GeometryIndex 34
+   &ListStatus       OUT
+   &NATOMS [&Type "Integer"] 6
+   &ROOT [&Type "Integer"] 0
+   &GRADNORM [&Type "Double"]       1.2437664400691650e-04
+   &GRAD [&Type "ArrayOfDoubles", &Dim (18,1)] 
+                                                         0
+
+0                                     -3.7973439771712275e-05
+1                                      2.5108968260164136e-05
+2                                      7.0277001797021399e-06
+3                                     -2.8617198021191337e-05
+4                                     -2.5217938098454074e-05
+5                                      3.7938756082406266e-05
+6                                      1.8061200290547808e-05
+7                                     -1.0534630061925787e-05
+8                                      6.5496996883053493e-06
+9                                     -3.9024877556026460e-05
+10                                     1.7642585089766571e-05
+11                                    -5.5323751298602675e-05
+12                                     5.6840650568046325e-05
+13                                     1.6987650532304666e-05
+14                                     5.9718755957283154e-06
+15                                     3.0713710376446823e-05
+16                                    -2.3986631622514853e-05
+17                                    -2.1642636747754018e-06
+$End
+$Geometry
+   &GeometryIndex 35
+   &ListStatus       OUT
+   &NATOMS [&Type "Integer"] 6
+   &NCORELESSECP [&Type "Integer"] 0
+   &NGHOSTATOMS [&Type "Integer"] 0
+   &CartesianCoordinates [&Type "Coordinates", &Dim(6,4), &Units "Bohr"] 
+              Li    -6.578587068083    5.570772870095   -3.224848788712
+              F     -3.323933470685   11.085664612492   -1.406548686488
+              O     -1.829767217637    7.035541439636    0.335794009412
+              P     -4.729919411147    8.618671428491   -0.325749745063
+              F     -7.084183933269   10.413684774379    0.783127377530
+              O     -3.591972996595    7.996622852341    2.423883131176
+$End
+$SCF_Energy
+   &GeometryIndex 35
+   &ListStatus       OUT
+   &SCF_ENERGY [&Type "Double"]      -6.9905121229914948e+02
+$End
+$DFT_Energy
+   &GeometryIndex 35
+   &ListStatus       OUT
+   &NALPHAEL [&Type "Integer"] 26
+   &NBETAEL [&Type "Integer"] 26
+   &NTOTALEL [&Type "Integer"] 52
+   &EEXCHANGE [&Type "Double"]      -4.8662140954407313e+01
+   &ECORR [&Type "Double"]      -2.3277391425779381e+00
+   &ECNL [&Type "Double"]       0.0000000000000000e+00
+   &EXC [&Type "Double"]      -5.0989880096985253e+01
+   &EEMBED [&Type "Double"]       0.0000000000000000e+00
+   &FINALEN [&Type "Double"]      -6.9905121229914948e+02  "No Van der Waals correction"
+$End
+$Solvation_Details
+   &GeometryIndex 35
+   &ListStatus       OUT
+   &SOLVENT [&Type "String"] "WATER"
+   &EPSILON [&Type "Double"]       8.0150999999999996e+01
+   &REFRAC [&Type "Double"]       1.3328000000000000e+00
+   &RSOLV [&Type "Double"]       1.3000000000000000e+00
+   &SURFACETYPE [&Type "String"] "GAUSSIAN VDW"
+   &NPOINTS [&Type "Integer"] 839
+   &SURFACEAREA [&Type "Double"]       4.8424842008600001e+02
+   &CPCMDIELENERGY [&Type "Double"]      -5.0946106999999997e-02
+$End
+$Mulliken_Population_Analysis
+   &GeometryIndex 35
+   &ListStatus       OUT
+   &NATOMS [&Type "Integer"] 6
+   &ATNO [&Type "ArrayOfIntegers", &Dim (6,1)] 
+                                                         0
+
+0                                                        3
+1                                                        9
+2                                                        8
+3                                                       15
+4                                                        9
+5                                                        8
+   &ATOMICCHARGES [&Type "ArrayOfDoubles", &Dim (6,1)] 
+                                                         0
+
+0                                      8.2634261459129288e-01
+1                                     -3.0538305145051403e-01
+2                                     -3.9398107995928200e-01
+3                                      5.3726746637812361e-01
+4                                     -3.8274857648765881e-01
+5                                     -2.8149737307207445e-01
+$End
+$Loewdin_Population_Analysis
+   &GeometryIndex 35
+   &ListStatus       OUT
+   &NATOMS [&Type "Integer"] 6
+   &ATNO [&Type "ArrayOfIntegers", &Dim (6,1)] 
+                                                         0
+
+0                                                        3
+1                                                        9
+2                                                        8
+3                                                       15
+4                                                        9
+5                                                        8
+   &ATOMICCHARGES [&Type "ArrayOfDoubles", &Dim (6,1)] 
+                                                         0
+
+0                                      6.2685838627834567e-01
+1                                     -9.7865364351653383e-02
+2                                     -2.5967974028643148e-01
+3                                      5.4886887463334588e-02
+4                                     -2.0050990061922924e-01
+5                                     -1.2369026848451270e-01
+$End
+$Mayer_Population_Analysis
+   &GeometryIndex 35
+   &ListStatus       OUT
+   &NATOMS [&Type "Integer"] 6 "Total number of atoms"
+   &BONDTHRESH [&Type "Double"]       1.0000000000000001e-01  "The threshold for printing"
+   &NBONDORDERSPRINT [&Type "Integer"] 6 "The number of bond orders larger than threshold"
+   &BONDORDERS [&Type "ArrayOfDoubles", &Dim (6,1)] "The bond orders"
+                                                         0
+
+0                                      2.7087853440967491e-01
+1                                      9.7794635729165669e-01
+2                                      7.0660184653945002e-01
+3                                      8.4411088047769745e-01
+4                                      8.5819174422010014e-01
+5                                      1.0466881425698502e+00
+   &COMPONENTS [&Type "ArrayOfIntegers", &Dim (6,4)] "The indices and atomic numbers of the bonding atoms"
+                                                         0                           1                           2                           3
+
+0                                                        0                           3                           3                          15
+1                                                        1                           9                           3                          15
+2                                                        2                           8                           3                          15
+3                                                        2                           8                           5                           8
+4                                                        3                          15                           4                           9
+5                                                        3                          15                           5                           8
+   &ATNO [&Type "ArrayOfIntegers", &Dim (6,1)] "Atomic number of the elements"
+                                                         0
+
+0                                                        3
+1                                                        9
+2                                                        8
+3                                                       15
+4                                                        9
+5                                                        8
+   &NA [&Type "ArrayOfDoubles", &Dim (6,1)] "Mulliken gross atomic population"
+                                                         0
+
+0                                      2.1736573854087049e+00
+1                                      9.3053830514505211e+00
+2                                      8.3939810799592838e+00
+3                                      1.4462732533621869e+01
+4                                      9.3827485764876606e+00
+5                                      8.2814973730720727e+00
+   &ZA [&Type "ArrayOfDoubles", &Dim (6,1)] "Total nuclear charge"
+                                                         0
+
+0                                      3.0000000000000000e+00
+1                                      9.0000000000000000e+00
+2                                      8.0000000000000000e+00
+3                                      1.5000000000000000e+01
+4                                      9.0000000000000000e+00
+5                                      8.0000000000000000e+00
+   &QA [&Type "ArrayOfDoubles", &Dim (6,1)] "Mulliken gross atomic charge"
+                                                         0
+
+0                                      8.2634261459129510e-01
+1                                     -3.0538305145052114e-01
+2                                     -3.9398107995928378e-01
+3                                      5.3726746637813072e-01
+4                                     -3.8274857648766059e-01
+5                                     -2.8149737307207268e-01
+   &VA [&Type "ArrayOfDoubles", &Dim (6,1)] "Mayer's total valence"
+                                                         0
+
+0                                      3.2180807092872465e-01
+1                                      9.7100441485217603e-01
+2                                      1.5732985188568933e+00
+3                                      3.8603066250307303e+00
+4                                      8.6728892790114720e-01
+5                                      1.8990393889009818e+00
+   &BVA [&Type "ArrayOfDoubles", &Dim (6,1)] "Mayer's bonded valence"
+                                                         0
+
+0                                      3.2180807092873381e-01
+1                                      9.7100441485222788e-01
+2                                      1.5732985188569799e+00
+3                                      3.8603066250307307e+00
+4                                      8.6728892790114998e-01
+5                                      1.8990393889010164e+00
+   &FA [&Type "ArrayOfDoubles", &Dim (6,1)] "Mayer's free valence"
+                                                         0
+
+0                                      0.0000000000000000e+00
+1                                      0.0000000000000000e+00
+2                                      0.0000000000000000e+00
+3                                      0.0000000000000000e+00
+4                                      0.0000000000000000e+00
+5                                      0.0000000000000000e+00
+$End
+$VdW_Correction
+   &GeometryIndex 35
+   &ListStatus       OUT
+   &VDW [&Type "Double"]      -7.8040879700448052e-03
+$End
+$SCF_Dipole_Moment
+   &GeometryIndex 35
+   &ListStatus       OUT
+   &METHOD [&Type "String"] "SCF"
+   &LEVEL [&Type "String"] "Relaxed density"
+   &MULT [&Type "Integer"] 1
+   &STATE [&Type "Integer"] -1
+   &IRREP [&Type "Integer"] 0
+   &NATOMS [&Type "Integer"] 6
+   &DODIPOLEATOM [&Type "Boolean"] false
+   &DIPOLEELECCONTRIB [&Type "ArrayOfDoubles", &Dim (3,1)] "Electronic contribution"
+                                                         0
+
+0                                     -4.3100480558619667e+00
+1                                     -2.5019096324069094e+00
+2                                     -5.3188911719556380e+00
+   &DIPOLENUCCONTRIB [&Type "ArrayOfDoubles", &Dim (3,1)] "Nuclear contribution"
+                                                         0
+
+0                                      1.9564592153359008e+00
+1                                     -2.4944524230715359e-01
+2                                      1.9854076110538941e+00
+   &DIPOLETOTAL [&Type "ArrayOfDoubles", &Dim (3,1)] "Total"
+                                                         0
+
+0                                     -2.3535888405260659e+00
+1                                     -2.7513548747140630e+00
+2                                     -3.3334835609017439e+00
+   &DIPOLEMAGNITUDE [&Type "Double", &Units "a.u."]       4.9215289014353898e+00
+$End
